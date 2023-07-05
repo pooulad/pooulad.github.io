@@ -1,12 +1,18 @@
-import React, { memo } from "react";
+import { useTheme } from "next-themes";
+import React, { memo, useEffect, useState } from "react";
 
 function Header() {
+  const { theme, setTheme } = useTheme();
+  const [hasMounted, setHasMounted] = useState(false);
+  useEffect(() => setHasMounted(true), []);
+  if (!hasMounted) return null;
   return (
     <div>
-      <div>Header</div>
-      <div>Header</div>
-      <div>Header</div>
-      <div>Header</div>
+      <div>
+        The current theme is: {theme}
+        <button onClick={() => setTheme("light")}>روشن</button>
+        <button onClick={() => setTheme("dark")}>تیره</button>
+      </div>
     </div>
   );
 }
