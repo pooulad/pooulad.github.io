@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>امیرمهدی پولادی</title>
+        <title>سایت شخصی امیرمهدی پولادی</title>
         <meta name="description" content="سایت نمونه کارهای امیرمهدی پولادی" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
