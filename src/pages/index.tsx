@@ -5,7 +5,7 @@ import SkillIndex from "@/components/Skill/components/Index";
 import ProjectIndex from "@/components/Project/components/Index";
 import ContactIndex from "@/components/Contact/components/Index";
 import { Fragment } from "react";
-import Index from "@/components/Header/Index";
+import Header from "@/components/Header/Index";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
       </Head>
       <main>
         <header>
-          <Index />
+          <Header />
         </header>
         <section>
           <MainIndex />
