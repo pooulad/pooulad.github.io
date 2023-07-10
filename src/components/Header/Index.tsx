@@ -8,7 +8,7 @@ function Header() {
   if (!hasMounted) return null;
   return (
     <div>
-      <div>
+      <div className="text-3xl font-bold underline">
         The current theme is: {theme}
         <button onClick={() => setTheme("light")}>روشن</button>
         <button onClick={() => setTheme("dark")}>تیره</button>
