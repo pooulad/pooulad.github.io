@@ -3,8 +3,6 @@ export default function GithubIcon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
-      width="1em"
-      height="1em"
       viewBox="0 0 291.32 291.32"
     >
       <path
