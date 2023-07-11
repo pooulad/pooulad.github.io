@@ -72,15 +72,6 @@ function Header() {
         >
           <AmirankalaIcon />
         </motion.a>
-        <motion.a
-          whileHover={{ y: -2 }}
-          whileTap={{ scale: 0.9 }}
-          className="w-6 mx-3"
-          href={"/"}
-          target={"_blank"}
-        >
-          <GithubIcon />
-        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
