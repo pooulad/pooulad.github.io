@@ -5,7 +5,7 @@ import AboutIndex from "@/components/About/components/About";
 import SkillIndex from "@/components/Skill/components/Skill";
 import ProjectIndex from "@/components/Project/components/Project";
 import ContactIndex from "@/components/Contact/components/Contact";
-import Header from "@/components/Header";
+import Header from "@/components/Header/Header";
 
 export default function Home() {
   return (
