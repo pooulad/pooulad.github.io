@@ -11,6 +11,9 @@ function CustomLink({ title, classname, link }: CustomLinkProps) {
   return (
     <Link href={link} className={classname}>
       {title}
+      <span className="h-[1px] inline-block w-full bg-dark absolute left-0 -bottom-0.5">
+        &nbsp;
+      </span>
     </Link>
   );
 }
