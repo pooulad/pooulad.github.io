@@ -3,7 +3,7 @@ export const dictionary = {
         links : {
             home : "خانه",
             projects : "پروژه ها",
-            skills : "مهارت ها"
+            about : "درباره من"
         }
     }
 }

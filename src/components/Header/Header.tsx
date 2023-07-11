@@ -17,8 +17,8 @@ function Header() {
         <button onClick={() => setTheme("light")}>روشن</button>
         <button onClick={() => setTheme("dark")}>تیره</button> */}
         <CustomLink title={dictionary.header.links.home} link={"/"} classname="mr-4" />
-        <CustomLink title={dictionary.header.links.projects} link={"/about"} classname="mx-4" />
-        <CustomLink title={dictionary.header.links.skills} link={"/projects"} classname="ml-4" />
+        <CustomLink title={dictionary.header.links.about} link={"/about"} classname="mx-4" />
+        <CustomLink title={dictionary.header.links.projects} link={"/projects"} classname="ml-4" />
       </nav>
       <nav>
         <Link href={"/"} target={"_blank"}>
