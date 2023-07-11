@@ -4,7 +4,9 @@ import React, { memo, useEffect, useState } from "react";
 import Logo from "./Logo";
 import { CustomLink } from "../Common";
 import { dictionary } from "@/dictionary";
-import { GithubIcon } from "@/assets/ts";
+import { AmirankalaIcon, GithubIcon, InstagramIcon } from "@/assets/ts";
+import { motion } from "framer-motion";
+import TelegramIcon from "@/assets/ts/TelegramIcon";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -34,21 +36,51 @@ function Header() {
         />
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
-        <a href={"https://amirankala.com"} target={"_blank"}>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"https://github.com/pooulad"}
+          target={"_blank"}
+        >
           <GithubIcon />
-        </a>
-        <a href={"https://github.com/pooulad"} target={"_blank"}>
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"https://t.me/pouladpesar"}
+          target={"_blank"}
+        >
+          <TelegramIcon />
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"https://instagram.com/_poulad_"}
+          target={"_blank"}
+        >
+          <InstagramIcon />
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"https://amirankala.com"}
+          target={"_blank"}
+        >
+          <AmirankalaIcon />
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"/"}
+          target={"_blank"}
+        >
           <GithubIcon />
-        </a>
-        <a href={"https://t.me/pouladpesar"} target={"_blank"}>
-          <GithubIcon />
-        </a>
-        <a href={"https://instagram.com/_poulad_"} target={"_blank"}>
-          <GithubIcon />
-        </a>
-        <a href={"/"} target={"_blank"}>
-          <GithubIcon />
-        </a>
+        </motion.a>
       </nav>
       <div className="absolute left-[50%] top-2 translate-x-[-50%]">
         <Logo />
