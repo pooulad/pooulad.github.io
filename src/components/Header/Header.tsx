@@ -4,6 +4,7 @@ import React, { memo, useEffect, useState } from "react";
 import Logo from "./Logo";
 import { CustomLink } from "../Common";
 import { dictionary } from "@/dictionary";
+import { GithubIcon } from "@/assets/ts";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -22,7 +23,7 @@ function Header() {
       </nav>
       <nav>
         <Link href={"/"} target={"_blank"}>
-          T
+          <GithubIcon />
         </Link>
         <Link href={"/"} target={"_blank"}>
           T
