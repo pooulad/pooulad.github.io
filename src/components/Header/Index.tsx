@@ -2,6 +2,8 @@ import { useTheme } from "next-themes";
 import Link from "next/link";
 import React, { memo, useEffect, useState } from "react";
 import Logo from "./Logo";
+import { CustomLink } from "../Common";
+import { dictionary } from "@/dictionary";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -14,9 +16,9 @@ function Header() {
         {/* The current theme is: {theme}
         <button onClick={() => setTheme("light")}>روشن</button>
         <button onClick={() => setTheme("dark")}>تیره</button> */}
-        <Link href={"/"}>خانه</Link>
-        <Link href={"/about"}>درباره من</Link>
-        <Link href={"/projects"}>پروژه ها</Link>
+        <CustomLink title={dictionary.header.links.home} link={"/"} />
+        <CustomLink title={dictionary.header.links.projects} link={"/about"} />
+        <CustomLink title={dictionary.header.links.skills} link={"/projects"} />
       </nav>
       <nav>
         <Link href={"/"} target={"_blank"}>

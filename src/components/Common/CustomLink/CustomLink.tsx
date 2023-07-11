@@ -3,7 +3,7 @@ import React, { memo } from "react";
 
 export type CustomLinkProps = {
   title: string;
-  classname: string;
+  classname?: string;
   link: string;
 };
 

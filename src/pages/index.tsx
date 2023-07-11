@@ -1,23 +1,23 @@
 import Head from "next/head";
-import MainIndex from "@/components/Main/components/Index";
-import AboutIndex from "@/components/About/components/Index";
-import SkillIndex from "@/components/Skill/components/Index";
-import ProjectIndex from "@/components/Project/components/Index";
-import ContactIndex from "@/components/Contact/components/Index";
 import { Fragment } from "react";
-import Header from "@/components/Header/Index";
+import MainIndex from "@/components/Main/components/Main";
+import AboutIndex from "@/components/About/components/About";
+import SkillIndex from "@/components/Skill/components/Skill";
+import ProjectIndex from "@/components/Project/components/Project";
+import ContactIndex from "@/components/Contact/components/Contact";
+import Header from "@/components/Header";
 
 export default function Home() {
   return (
     <Fragment>
       <Head>
         <title>سایت شخصی امیرمهدی پولادی</title>
-        <meta name="description" content="سایت نمونه کارهای امیرمهدی پولادی" />
+        <meta name="description" content="وبسایت رزومه امیرمهدی پولادی" />
       </Head>
       <main>
-        <header>
+        <div>
           <Header />
-        </header>
+        </div>
         <section>
           <MainIndex />
         </section>
