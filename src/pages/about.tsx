@@ -14,6 +14,9 @@ function about() {
       <main className="flex items-center flex-col w-full justify-center">
         <Layout className="pt-16">
           <AnimatedText className="!text-6xl" text={dictionary.about.title} />
+          <div className="grid w-full grid-cols-8 gap-16">
+            {dictionary.about.biography}
+          </div>
         </Layout>
       </main>
     </Fragment>
