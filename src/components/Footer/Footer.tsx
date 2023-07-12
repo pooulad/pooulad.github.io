@@ -26,7 +26,7 @@ function Footer() {
         <a href={dictionary.ownerCoffeeBede.link}>
           <img
             alt={dictionary.ownerCoffeeBede.alt}
-            className="img-fluid"
+            className="w-52"
             src={dictionary.ownerCoffeeBede.src}
           />
         </a>
