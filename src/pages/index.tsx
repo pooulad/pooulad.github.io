@@ -12,6 +12,7 @@ import { dictionary } from "@/dictionary";
 import ProfilePic from "../assets/images/profile-pic.png";
 import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
 import Link from "next/link";
+import { LinkIcon } from "@/assets/ts";
 
 export default function Home() {
   return (
@@ -24,14 +25,33 @@ export default function Home() {
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2">
-              <Image src={ProfilePic} alt={dictionary.owner} className="w-full h-auto" />
+              <Image
+                src={ProfilePic}
+                alt={dictionary.owner}
+                className="w-full h-auto"
+              />
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
-              <AnimatedText text={dictionary.home.h1Tag} className="!text-6xl !text-right" />
-              <p className="my-4 text-base font-medium">{dictionary.home.pTag}</p>
+              <AnimatedText
+                text={dictionary.home.h1Tag}
+                className="!text-6xl !text-right"
+              />
+              <p className="my-4 text-base font-medium">
+                {dictionary.home.pTag}
+              </p>
               <div className="flex items-center self-start mt-2">
-                <Link download={true} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark" href={"./poulad.pdf"} target={"_blank"}>رزومه من</Link>
-                <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>ایمیل</Link>
+                <Link
+                  download={true}
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark"
+                  href={"./poulad.pdf"}
+                  target={"_blank"}
+                >
+                  <span className="mx-1"><LinkIcon /></span>
+                  <span className="mx-1">رزومه من</span>
+                </Link>
+                <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>
+                  ایمیل
+                </Link>
               </div>
             </div>
           </div>
