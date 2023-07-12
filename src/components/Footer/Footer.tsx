@@ -8,7 +8,7 @@ function Footer() {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
       <Layout className="py-8 flex items-center justify-between">
-        <span>{new Date().getFullYear()} &copy; تمامی حقوق محفوظ است</span>
+        <span>{new Date().getFullYear()} &copy; {dictionary.footer.copyRight}</span>
         <div className="flex items-center">
           <span>{dictionary.footer.madeWith}</span>
           <span className="text-primary text-2xl px-1">&#9825;</span>

@@ -10,6 +10,7 @@ export const dictionary = {
     madeWith: "ساخته شده با",
     by: "توسط",
     creator: "poulad",
+    copyRight: "تمامی حقوق محفوظ است.",
   },
   owner: "امیرمهدی پولادی",
   ownerEn: "amir mahdi pouladi",
@@ -85,6 +86,9 @@ export const dictionary = {
       go: "GO",
       linux: "Linux",
       fullStack: "FullStack Developer",
+    },
+    experience: {
+      title: "تجربه های من",
     },
   },
 };
