@@ -23,11 +23,11 @@ function Footer() {
             </Link>
           </span>
         </div>
-        <a href="https://www.coffeebede.com/poulad">
-          <Image
-            alt={dictionary.buyMeACoffee}
-            className="img-fluid w-52"
-            src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg"
+        <a href={dictionary.ownerCoffeeBede.link}>
+          <img
+            alt={dictionary.ownerCoffeeBede.alt}
+            className="img-fluid"
+            src={dictionary.ownerCoffeeBede.src}
           />
         </a>
       </Layout>

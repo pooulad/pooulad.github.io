@@ -6,7 +6,11 @@ export const dictionary = {
       about: "درباره من",
     },
   },
-  buyMeACoffee: "یک قهوه من رو مهمون کن",
+  ownerCoffeeBede: {
+    link: "https://www.coffeebede.com/poulad",
+    alt: "یک قهوه من رو مهمون کن",
+    src: "https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg",
+  },
   ownerEmailAddress: "poooooladi@gmail.com",
   ownerWebsiteAddress: "https://amirankala.com",
   ownerGithubAddress: "https://github.com/pooulad",
