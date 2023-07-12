@@ -42,7 +42,8 @@ export const dictionary = {
     contactMeTitle: "تماس با من",
     hireMeTitle: "تماس",
   },
-  about : {
-    title : "صحبت کردن بی ارزش است. به من کد را نشان بده."
-  }
+  about: {
+    title: "صحبت کردن بی ارزش است. به من کد را نشان بده.",
+    biography: "بیوگرافی",
+  },
 };
