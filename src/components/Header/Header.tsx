@@ -7,6 +7,7 @@ import { dictionary } from "@/dictionary";
 import { AmirankalaIcon, GithubIcon, InstagramIcon } from "@/assets/ts";
 import { motion } from "framer-motion";
 import TelegramIcon from "@/assets/ts/TelegramIcon";
+import EmailIcon from "@/assets/ts/EmailIcon";
 
 function Header() {
   const { theme, setTheme } = useTheme();
@@ -62,6 +63,15 @@ function Header() {
           target={"_blank"}
         >
           <InstagramIcon />
+        </motion.a>
+        <motion.a
+          whileHover={{ y: -2 }}
+          whileTap={{ scale: 0.9 }}
+          className="w-6 mx-3"
+          href={"mailto:poooooladi@gmail.com"}
+          target={"_blank"}
+        >
+          <EmailIcon />
         </motion.a>
         <motion.a
           whileHover={{ y: -2 }}
