@@ -10,16 +10,16 @@ function Footer() {
       <Layout className="py-8 flex items-center justify-between">
         <span>{new Date().getFullYear()} &copy; تمامی حقوق محفوظ است</span>
         <div className="flex items-center">
-          <span>ساخته شده با</span>
+          <span>{dictionary.footer.madeWith}</span>
           <span className="text-primary text-2xl px-1">&#9825;</span>
           <span>
-            توسط &nbsp;
+            {dictionary.footer.by} &nbsp;
             <Link
               className="underline underline-offset-2"
               href={dictionary.ownerSocials.githubAddress}
               target={"_blank"}
             >
-              poulad
+              {dictionary.footer.creator}
             </Link>
           </span>
         </div>

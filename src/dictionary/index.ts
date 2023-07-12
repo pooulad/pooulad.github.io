@@ -6,9 +6,10 @@ export const dictionary = {
       about: "درباره من",
     },
   },
-  footer : {
-    madeWith : "ساخته شده با",
-    creator : "poulad"
+  footer: {
+    madeWith: "ساخته شده با",
+    by: "توسط",
+    creator: "poulad",
   },
   owner: "امیرمهدی پولادی",
   ownerEn: "amir mahdi pouladi",
