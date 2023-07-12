@@ -15,6 +15,7 @@ import Link from "next/link";
 import { LinkIcon } from "@/assets/ts";
 import { CustomLink } from "@/components/Common";
 import Hireme from "@/components/Hireme/Hireme";
+import LightBulb from "../assets/images/miscellaneous_icons_1.cd3c5e27.svg";
 
 export default function Home() {
   return (
@@ -63,6 +64,9 @@ export default function Home() {
           </div>
         </Layout>
         <Hireme />
+        <div>
+          <Image alt={dictionary.ownerEn} src={LightBulb} />
+        </div>
         {/* <section>
           <MainIndex />
         </section>
