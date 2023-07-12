@@ -1,4 +1,4 @@
-export default function HiremeIcon() {
+export default function HiremeIcon({ className }: any) {
   return (
     <svg
       version="1.1"
@@ -11,6 +11,7 @@ export default function HiremeIcon() {
       viewBox="0 0 1024 1024"
       enableBackground="new 0 0 1024 1024"
       xmlSpace="preserve"
+      className={className}
     >
       <path
         fill="#000000"
