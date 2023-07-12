@@ -14,11 +14,21 @@ function Footer() {
           <span className="text-primary text-2xl px-1">&#9825;</span>
           <span>
             توسط &nbsp;
-            <Link className="underline underline-offset-2" href={dictionary.ownerGithubAddress} target={"_blank"}>
+            <Link
+              className="underline underline-offset-2"
+              href={dictionary.ownerGithubAddress}
+              target={"_blank"}
+            >
               poulad
             </Link>
           </span>
         </div>
+        <a href="https://www.coffeebede.com/poulad">
+          <img
+            className="img-fluid w-52"
+            src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg"
+          />
+        </a>
       </Layout>
     </footer>
   );
