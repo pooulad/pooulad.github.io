@@ -1,5 +1,4 @@
 import { useTheme } from "next-themes";
-import Link from "next/link";
 import React, { memo, useEffect, useState } from "react";
 import Logo from "./Logo";
 import { CustomLink } from "../Common";
@@ -45,7 +44,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={dictionary.ownerGithubAddress}
+          href={dictionary.ownerSocials.githubAddress}
           target={"_blank"}
         >
           <GithubIcon />
@@ -54,7 +53,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={dictionary.ownerTelegramAddress}
+          href={dictionary.ownerSocials.telegramAddress}
           target={"_blank"}
         >
           <TelegramIcon />
@@ -63,7 +62,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={dictionary.ownerInstagramAddress}
+          href={dictionary.ownerSocials.instagramAddress}
           target={"_blank"}
         >
           <InstagramIcon />
@@ -72,7 +71,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={`mailto:${dictionary.ownerEmailAddress}`}
+          href={`mailto:${dictionary.ownerSocials.emailAddress}`}
           target={"_blank"}
         >
           <EmailIcon />
@@ -81,7 +80,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={dictionary.ownerWebsiteAddress}
+          href={dictionary.ownerSocials.websiteAddress}
           target={"_blank"}
         >
           <AmirankalaIcon />

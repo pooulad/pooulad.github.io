@@ -16,7 +16,7 @@ function Footer() {
             توسط &nbsp;
             <Link
               className="underline underline-offset-2"
-              href={dictionary.ownerGithubAddress}
+              href={dictionary.ownerSocials.githubAddress}
               target={"_blank"}
             >
               poulad

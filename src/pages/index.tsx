@@ -55,7 +55,7 @@ export default function Home() {
                 </Link>
                 <CustomLink
                   title={dictionary.home.contactMeTitle}
-                  link={`mailto:${dictionary.ownerEmailAddress}`}
+                  link={`mailto:${dictionary.ownerSocials.emailAddress}`}
                   classname="mx-4 font-bold"
                 />
               </div>

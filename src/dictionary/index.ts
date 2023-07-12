@@ -6,18 +6,24 @@ export const dictionary = {
       about: "درباره من",
     },
   },
+  footer : {
+    madeWith : "ساخته شده با",
+    creator : "poulad"
+  },
+  owner: "امیرمهدی پولادی",
+  ownerEn: "amir mahdi pouladi",
   ownerCoffeeBede: {
     link: "https://www.coffeebede.com/poulad",
     alt: "یک قهوه من رو مهمون کن",
     src: "https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg",
   },
-  ownerEmailAddress: "poooooladi@gmail.com",
-  ownerWebsiteAddress: "https://amirankala.com",
-  ownerGithubAddress: "https://github.com/pooulad",
-  ownerTelegramAddress: "https://t.me/pouladpesar",
-  ownerInstagramAddress: "https://instagram.com/_pooulad_",
-  owner: "امیرمهدی پولادی",
-  ownerEn: "amir mahdi pouladi",
+  ownerSocials: {
+    emailAddress: "poooooladi@gmail.com",
+    websiteAddress: "https://amirankala.com",
+    githubAddress: "https://github.com/pooulad",
+    telegramAddress: "https://t.me/pouladpesar",
+    instagramAddress: "https://instagram.com/_pooulad_",
+  },
   headTitle: "سایت شخصی امیرمهدی پولادی",
   metaTitle: "وبسایت رزومه امیرمهدی پولادی",
   home: {
