@@ -13,9 +13,16 @@ function about() {
       </Head>
       <main className="flex items-center flex-col w-full justify-center">
         <Layout className="pt-16">
-          <AnimatedText className="!text-6xl" text={dictionary.about.title} />
+          <AnimatedText className="!text-6xl mb-16" text={dictionary.about.title} />
           <div className="grid w-full grid-cols-8 gap-16">
-            {dictionary.about.biography}
+            <div className="flex flex-col col-span-3 items-start justify-start">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+                {dictionary.about.biography}
+              </h2>
+              <p className="font-medium">{dictionary.about.p1}</p>
+              <p className="font-medium my-4">{dictionary.about.p2}</p>
+              <p className="font-medium">{dictionary.about.p3}</p>
+            </div>
           </div>
         </Layout>
       </main>
