@@ -45,7 +45,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={"https://github.com/pooulad"}
+          href={dictionary.ownerGithubAddress}
           target={"_blank"}
         >
           <GithubIcon />
@@ -54,7 +54,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={"https://t.me/pouladpesar"}
+          href={dictionary.ownerTelegramAddress}
           target={"_blank"}
         >
           <TelegramIcon />
@@ -63,7 +63,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={"https://instagram.com/_poulad_"}
+          href={dictionary.ownerInstagramAddress}
           target={"_blank"}
         >
           <InstagramIcon />
@@ -81,7 +81,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={"https://amirankala.com"}
+          href={dictionary.ownerWebsiteAddress}
           target={"_blank"}
         >
           <AmirankalaIcon />

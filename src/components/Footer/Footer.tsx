@@ -1,4 +1,5 @@
 import Layout from "@/Layout";
+import { dictionary } from "@/dictionary";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { memo, useEffect } from "react";
@@ -13,7 +14,7 @@ function Footer() {
           <span className="text-primary text-2xl px-1">&#9825;</span>
           <span>
             توسط &nbsp;
-            <Link className="underline underline-offset-2" href={"https://github.com/pooulad"} target={"_blank"}>
+            <Link className="underline underline-offset-2" href={dictionary.ownerGithubAddress} target={"_blank"}>
               poulad
             </Link>
           </span>
