@@ -4,10 +4,14 @@ import React, { memo, useEffect, useState } from "react";
 import Logo from "./Logo";
 import { CustomLink } from "../Common";
 import { dictionary } from "@/dictionary";
-import { AmirankalaIcon, GithubIcon, InstagramIcon } from "@/assets/ts";
+import {
+  AmirankalaIcon,
+  EmailIcon,
+  GithubIcon,
+  InstagramIcon,
+  TelegramIcon,
+} from "@/assets/ts";
 import { motion } from "framer-motion";
-import TelegramIcon from "@/assets/ts/TelegramIcon";
-import EmailIcon from "@/assets/ts/EmailIcon";
 
 function Header() {
   const { theme, setTheme } = useTheme();
