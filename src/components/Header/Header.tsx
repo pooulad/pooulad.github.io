@@ -72,7 +72,7 @@ function Header() {
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
           className="w-6 mx-3"
-          href={"mailto:poooooladi@gmail.com"}
+          href={`mailto:${dictionary.ownerEmailAddress}`}
           target={"_blank"}
         >
           <EmailIcon />
