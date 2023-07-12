@@ -3,7 +3,7 @@ import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
 import { dictionary } from "@/dictionary";
 import Head from "next/head";
 import Image from "next/image";
-import React, { Fragment, memo } from "react";
+import React, { Fragment, memo, useEffect, useRef } from "react";
 import ProfilePic2 from "../assets/images/profile-pic3.jpg";
 
 function about() {
@@ -41,25 +41,33 @@ function about() {
                 <span className="inline-block font-bold text-7xl">
                   {dictionary.about.experience.satisfiedClients.number}
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.satisfiedClients.text}</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  {dictionary.about.experience.satisfiedClients.text}
+                </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   {dictionary.about.experience.projectsCompleted.number}
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.projectsCompleted.text}</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  {dictionary.about.experience.projectsCompleted.text}
+                </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   {dictionary.about.experience.yearsOfExperience.number}
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.yearsOfExperience.text}</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  {dictionary.about.experience.yearsOfExperience.text}
+                </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   {dictionary.about.experience.workingHours.number}
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.workingHours.text}</h2>
+                <h2 className="text-xl font-medium capitalize text-dark/75">
+                  {dictionary.about.experience.workingHours.text}
+                </h2>
               </div>
             </div>
           </div>
