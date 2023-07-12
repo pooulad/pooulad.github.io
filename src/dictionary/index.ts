@@ -50,19 +50,19 @@ export const dictionary = {
     p3: "به شخصه معتقدم طراحی وبسایت چیزی فراتر از زیبا جلوه دادن اجزای سایت است. درواقع هدف من در این راستا همیشه حل مشکلات و ایجاد تجربیات بصری و لذت بخش برای کاربران است.",
     experience: {
       satisfiedClients: {
-        number: "20+",
+        number: "20",
         text: "مشتریان راضی",
       },
       projectsCompleted: {
-        number: "13+",
+        number: "13",
         text: "پروژه انجام شده",
       },
       yearsOfExperience: {
-        number: "4+",
+        number: "4",
         text: "سالهای تجربه",
       },
       workingHours: {
-        number: "5000+",
+        number: "5000",
         text: "ساعات کاری",
       },
     },

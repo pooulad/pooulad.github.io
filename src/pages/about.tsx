@@ -8,11 +8,10 @@ import ProfilePic2 from "../assets/images/profile-pic3.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 
 const AnimatedNumbers = ({ value }: any) => {
-  const ref = useRef(null);
-
+  const ref = useRef<any>(null);
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 3000 });
-  const isInView = useInView({ ref });
+  const springValue = useSpring(motionValue, { duration: 10000 });
+  const isInView = useInView(ref, { once: true });
   useEffect(() => {
     if (isInView) {
       motionValue.set(value);
@@ -21,6 +20,9 @@ const AnimatedNumbers = ({ value }: any) => {
   useEffect(() => {
     springValue.on("change", (latest) => {
       console.log(latest);
+      if (ref.current && latest.toFixed(0) <= value) {
+        ref.current.textContent = latest.toFixed();
+      }
     });
   }, [springValue, value]);
   return <span ref={ref}></span>;
@@ -59,7 +61,10 @@ function about() {
             <div className="flex flex-col col-span-2 justify-between items-end">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
-                  {dictionary.about.experience.satisfiedClients.number}
+                  <AnimatedNumbers
+                    value={dictionary.about.experience.satisfiedClients.number}
+                  />
+                  +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   {dictionary.about.experience.satisfiedClients.text}
@@ -67,7 +72,10 @@ function about() {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
-                  {dictionary.about.experience.projectsCompleted.number}
+                  <AnimatedNumbers
+                    value={dictionary.about.experience.projectsCompleted.number}
+                  />
+                  +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   {dictionary.about.experience.projectsCompleted.text}
@@ -75,7 +83,10 @@ function about() {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
-                  {dictionary.about.experience.yearsOfExperience.number}
+                  <AnimatedNumbers
+                    value={dictionary.about.experience.yearsOfExperience.number}
+                  />
+                  +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   {dictionary.about.experience.yearsOfExperience.text}
@@ -83,7 +94,10 @@ function about() {
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
-                  {dictionary.about.experience.workingHours.number}
+                  <AnimatedNumbers
+                    value={dictionary.about.experience.workingHours.number}
+                  />
+                  +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
                   {dictionary.about.experience.workingHours.text}
