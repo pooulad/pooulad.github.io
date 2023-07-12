@@ -11,6 +11,7 @@ import Image from "next/image";
 import { dictionary } from "@/dictionary";
 import ProfilePic from "../assets/images/profile-pic.png";
 import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -27,7 +28,11 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText text={dictionary.home.h1Tag} className="!text-6xl !text-right" />
-              <p>{dictionary.home.pTag}</p>
+              <p className="my-4 text-base font-medium">{dictionary.home.pTag}</p>
+              <div className="flex items-center">
+                <Link href={"./poulad.pdf"} target={"_blank"}>رزومه من</Link>
+                <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>ایمیل</Link>
+              </div>
             </div>
           </div>
         </Layout>
