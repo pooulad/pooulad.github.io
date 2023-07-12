@@ -1,11 +1,5 @@
 import Head from "next/head";
 import { Fragment } from "react";
-import MainIndex from "@/components/Main/components/Main";
-import AboutIndex from "@/components/About/components/About";
-import SkillIndex from "@/components/Skill/components/Skill";
-import ProjectIndex from "@/components/Project/components/Project";
-import ContactIndex from "@/components/Contact/components/Contact";
-import Header from "@/components/Header/Header";
 import Layout from "@/Layout";
 import Image from "next/image";
 import { dictionary } from "@/dictionary";
@@ -21,8 +15,8 @@ export default function Home() {
   return (
     <Fragment>
       <Head>
-        <title>{dictionary.headTitle}</title>
-        <meta name="description" content={dictionary.metaTitle} />
+        <title>{dictionary.head.home.title}</title>
+        <meta name="description" content={dictionary.head.home.meta} />
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
@@ -64,24 +58,13 @@ export default function Home() {
           </div>
         </Layout>
         <Hireme />
-        <div>
-          <Image alt={dictionary.ownerEn} src={LightBulb} />
+        <div className="absolute w-24 inline-block bottom-8 right-8">
+          <Image
+            className="w-full h-auto"
+            alt={dictionary.ownerEn}
+            src={LightBulb}
+          />
         </div>
-        {/* <section>
-          <MainIndex />
-        </section>
-        <section>
-          <AboutIndex />
-        </section>
-        <section>
-          <SkillIndex />
-        </section>
-        <section>
-          <ProjectIndex />
-        </section>
-        <section>
-          <ContactIndex />
-        </section> */}
       </main>
     </Fragment>
   );
