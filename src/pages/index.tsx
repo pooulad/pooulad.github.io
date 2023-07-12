@@ -30,7 +30,7 @@ export default function Home() {
               <AnimatedText text={dictionary.home.h1Tag} className="!text-6xl !text-right" />
               <p className="my-4 text-base font-medium">{dictionary.home.pTag}</p>
               <div className="flex items-center self-start mt-2">
-                <Link href={"./poulad.pdf"} target={"_blank"}>رزومه من</Link>
+                <Link download={true} className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark" href={"./poulad.pdf"} target={"_blank"}>رزومه من</Link>
                 <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>ایمیل</Link>
               </div>
             </div>
