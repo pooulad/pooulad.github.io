@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 type AnimatedTextProps = {
   text: string;
-  className: string;
+  className?: string;
 };
 
 const qoute = {
