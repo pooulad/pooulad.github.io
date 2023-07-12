@@ -63,45 +63,45 @@ function about() {
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   <AnimatedNumbers
-                    value={dictionary.about.experience.satisfiedClients.number}
+                    value={dictionary.about.summary.satisfiedClients.number}
                   />
                   +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  {dictionary.about.experience.satisfiedClients.text}
+                  {dictionary.about.summary.satisfiedClients.text}
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   <AnimatedNumbers
-                    value={dictionary.about.experience.projectsCompleted.number}
+                    value={dictionary.about.summary.projectsCompleted.number}
                   />
                   +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  {dictionary.about.experience.projectsCompleted.text}
+                  {dictionary.about.summary.projectsCompleted.text}
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   <AnimatedNumbers
-                    value={dictionary.about.experience.yearsOfExperience.number}
+                    value={dictionary.about.summary.yearsOfExperience.number}
                   />
                   +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  {dictionary.about.experience.yearsOfExperience.text}
+                  {dictionary.about.summary.yearsOfExperience.text}
                 </h2>
               </div>
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   <AnimatedNumbers
-                    value={dictionary.about.experience.workingHours.number}
+                    value={dictionary.about.summary.workingHours.number}
                   />
                   +
                 </span>
                 <h2 className="text-xl font-medium capitalize text-dark/75">
-                  {dictionary.about.experience.workingHours.text}
+                  {dictionary.about.summary.workingHours.text}
                 </h2>
               </div>
             </div>
