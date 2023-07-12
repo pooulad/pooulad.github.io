@@ -28,12 +28,39 @@ function about() {
               <p className="font-medium my-4">{dictionary.about.p2}</p>
               <p className="font-medium">{dictionary.about.p3}</p>
             </div>
-            <div className="">
+            <div className="col-span-3 bg-light p-8 relative h-max rounded-2xl border border-solid border-dark">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
               <Image
-                className="rounded-2xl"
+                className="rounded-2xl w-full h-auto"
                 alt={dictionary.owner}
                 src={ProfilePic2}
               />
+            </div>
+            <div className="flex flex-col col-span-2 justify-between items-end">
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block font-bold text-7xl">
+                  {dictionary.about.experience.satisfiedClients.number}
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.satisfiedClients.text}</h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block font-bold text-7xl">
+                  {dictionary.about.experience.projectsCompleted.number}
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.projectsCompleted.text}</h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block font-bold text-7xl">
+                  {dictionary.about.experience.yearsOfExperience.number}
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.yearsOfExperience.text}</h2>
+              </div>
+              <div className="flex flex-col items-end justify-center">
+                <span className="inline-block font-bold text-7xl">
+                  {dictionary.about.experience.workingHours.number}
+                </span>
+                <h2 className="text-xl font-medium capitalize text-dark/75">{dictionary.about.experience.workingHours.text}</h2>
+              </div>
             </div>
           </div>
         </Layout>
