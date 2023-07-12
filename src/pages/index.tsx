@@ -14,6 +14,7 @@ import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
 import Link from "next/link";
 import { LinkIcon } from "@/assets/ts";
 import { CustomLink } from "@/components/Common";
+import Hireme from "@/components/Hireme/Hireme";
 
 export default function Home() {
   return (
@@ -61,6 +62,7 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <Hireme />
         {/* <section>
           <MainIndex />
         </section>
