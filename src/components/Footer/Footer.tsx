@@ -1,5 +1,6 @@
 import Layout from "@/Layout";
 import { dictionary } from "@/dictionary";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { memo, useEffect } from "react";
@@ -24,7 +25,8 @@ function Footer() {
           </span>
         </div>
         <a href="https://www.coffeebede.com/poulad">
-          <img
+          <Image
+            alt={dictionary.buyMeACoffee}
             className="img-fluid w-52"
             src="https://coffeebede.ir/DashboardTemplateV2/app-assets/images/banner/default-yellow.svg"
           />

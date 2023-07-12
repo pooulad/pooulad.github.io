@@ -6,6 +6,7 @@ export const dictionary = {
       about: "درباره من",
     },
   },
+  buyMeACoffee: "یک قهوه من رو مهمون کن",
   ownerEmailAddress: "poooooladi@gmail.com",
   ownerWebsiteAddress: "https://amirankala.com",
   ownerGithubAddress: "https://github.com/pooulad",
