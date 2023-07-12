@@ -22,7 +22,7 @@ const AnimatedNumbers = ({ value }: any) => {
     springValue.on("change", (latest) => {
       console.log(latest);
     });
-  }, [isInView, value]);
+  }, [springValue, value]);
   return <span ref={ref}></span>;
 };
 
