@@ -29,7 +29,7 @@ export default function Home() {
             <div className="w-1/2 flex flex-col items-center self-center">
               <AnimatedText text={dictionary.home.h1Tag} className="!text-6xl !text-right" />
               <p className="my-4 text-base font-medium">{dictionary.home.pTag}</p>
-              <div className="flex items-center">
+              <div className="flex items-center self-start mt-2">
                 <Link href={"./poulad.pdf"} target={"_blank"}>رزومه من</Link>
                 <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>ایمیل</Link>
               </div>
