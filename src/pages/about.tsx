@@ -6,11 +6,12 @@ import Image from "next/image";
 import React, { Fragment, memo, useEffect, useRef } from "react";
 import ProfilePic2 from "../assets/images/profile-pic3.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
+import Skill from "@/components/Skill/components/Skill";
 
 const AnimatedNumbers = ({ value }: any) => {
   const ref = useRef<any>(null);
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 10000 });
+  const springValue = useSpring(motionValue, { duration: 5000 });
   const isInView = useInView(ref, { once: true });
   useEffect(() => {
     if (isInView) {
@@ -105,6 +106,7 @@ function about() {
               </div>
             </div>
           </div>
+          <Skill />
         </Layout>
       </main>
     </Fragment>
