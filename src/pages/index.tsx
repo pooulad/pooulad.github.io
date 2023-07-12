@@ -13,6 +13,7 @@ import ProfilePic from "../assets/images/profile-pic.png";
 import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
 import Link from "next/link";
 import { LinkIcon } from "@/assets/ts";
+import { CustomLink } from "@/components/Common";
 
 export default function Home() {
   return (
@@ -46,12 +47,16 @@ export default function Home() {
                   href={"./poulad.pdf"}
                   target={"_blank"}
                 >
-                  <span className="mx-1"><LinkIcon /></span>
-                  <span className="mx-1">رزومه من</span>
+                  <span className="mx-1">
+                    <LinkIcon />
+                  </span>
+                  <span className="mx-1">{dictionary.home.resumeTitle}</span>
                 </Link>
-                <Link href={"mailto:poooooladi@gmail.com"} target={"_blank"}>
-                  ایمیل
-                </Link>
+                <CustomLink
+                  title={dictionary.home.contactMeTitle}
+                  link={"mailto:poooooladi@gmail.com"}
+                  classname="mx-4 font-bold"
+                />
               </div>
             </div>
           </div>
