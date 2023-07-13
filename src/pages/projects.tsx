@@ -3,6 +3,8 @@ import { GithubIcon } from "@/assets/ts";
 import AnimatedText from "@/components/Common/AnimatedText/AnimatedText";
 import { dictionary } from "@/dictionary";
 import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
 import React, { Fragment, memo } from "react";
 
 function projects() {
