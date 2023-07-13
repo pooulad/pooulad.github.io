@@ -6,8 +6,8 @@ export default function MoonToSubIcon({ className }: any) {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       className={className}
-      width="1.5em"
-      height="1.5em"
+      width="1.2em"
+      height="1.2em"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}

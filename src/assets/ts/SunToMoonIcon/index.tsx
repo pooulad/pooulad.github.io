@@ -5,8 +5,8 @@ export default function SunToMoonIcon({ className }: any) {
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 32 32"
-      width="1.5em"
-      height="1.5em"
+      width="1.2em"
+      height="1.2em"
       className={className}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
