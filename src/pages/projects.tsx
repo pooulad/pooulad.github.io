@@ -42,10 +42,18 @@ const FeaturedProject = ({
         href={link}
         target={"_blank"}
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        />
       </Link>
       <div className="w-1/2 flex flex-col justify-between items-start pr-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           className="hover:underline underline-offset-2"
           href={link}
@@ -86,10 +94,18 @@ const SimpleProject = ({
         href={link}
         target={"_blank"}
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+        />
       </Link>
       <div className="w-full flex flex-col justify-between items-start mt-2">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           className="hover:underline underline-offset-2"
           href={link}
