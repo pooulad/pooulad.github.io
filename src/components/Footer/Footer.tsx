@@ -8,7 +8,9 @@ function Footer() {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg">
       <Layout className="py-8 flex items-center justify-between">
-        <span>{new Date().getFullYear()} &copy; {dictionary.footer.copyRight}</span>
+        <span>
+          {new Date().getFullYear()} &copy; {dictionary.footer.copyRight}
+        </span>
         <div className="flex items-center">
           <span>{dictionary.footer.madeWith}</span>
           <span className="text-primary text-2xl px-1">&#9825;</span>
@@ -23,7 +25,7 @@ function Footer() {
             </Link>
           </span>
         </div>
-        <a href={dictionary.ownerCoffeeBede.link}>
+        <a href={dictionary.ownerCoffeeBede.link} target={"_blank"}>
           <img
             alt={dictionary.ownerCoffeeBede.alt}
             className="w-52"
