@@ -23,7 +23,7 @@ const Details = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -33,13 +33,17 @@ const Details = ({
       >
         <h3 className="capitalize font-bold text-2xl">
           {position}&nbsp;
-          <a
-            className="text-primary capitalize"
-            target={"_blank"}
-            href={companyLink}
-          >
-            @{company}
-          </a>
+          {companyLink === "#" ? (
+            <a className="text-primary capitalize">{company}</a>
+          ) : (
+            <a
+              className="text-primary capitalize"
+              target={"_blank"}
+              href={companyLink}
+            >
+              {company}
+            </a>
+          )}
         </h3>
         <span className="capitalize font-medium text-dark/75">
           {time} | {address}
@@ -68,52 +72,60 @@ function Experience() {
         />
         <ul className="w-full flex flex-col items-start justify-between ml-4">
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex1.position}
+            company={dictionary.about.experience.ex1.company}
+            companyLink={dictionary.about.experience.ex1.companyLink}
+            work={dictionary.about.experience.ex1.work}
+            address={dictionary.about.experience.ex1.address}
+            time={dictionary.about.experience.ex1.time}
           />
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex2.position}
+            company={dictionary.about.experience.ex2.company}
+            companyLink={dictionary.about.experience.ex2.companyLink}
+            work={dictionary.about.experience.ex2.work}
+            address={dictionary.about.experience.ex2.address}
+            time={dictionary.about.experience.ex2.time}
           />
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex3.position}
+            company={dictionary.about.experience.ex3.company}
+            companyLink={dictionary.about.experience.ex3.companyLink}
+            work={dictionary.about.experience.ex3.work}
+            address={dictionary.about.experience.ex3.address}
+            time={dictionary.about.experience.ex3.time}
           />
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex4.position}
+            company={dictionary.about.experience.ex4.company}
+            companyLink={dictionary.about.experience.ex4.companyLink}
+            work={dictionary.about.experience.ex4.work}
+            address={dictionary.about.experience.ex4.address}
+            time={dictionary.about.experience.ex4.time}
           />
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex5.position}
+            company={dictionary.about.experience.ex5.company}
+            companyLink={dictionary.about.experience.ex5.companyLink}
+            work={dictionary.about.experience.ex5.work}
+            address={dictionary.about.experience.ex5.address}
+            time={dictionary.about.experience.ex5.time}
           />
           <Details
-            position={"test"}
-            company="google"
-            companyLink="https://amirankala.com"
-            work="testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttest"
-            address="test"
-            time="test"
+            position={dictionary.about.experience.ex6.position}
+            company={dictionary.about.experience.ex6.company}
+            companyLink={dictionary.about.experience.ex6.companyLink}
+            work={dictionary.about.experience.ex6.work}
+            address={dictionary.about.experience.ex6.address}
+            time={dictionary.about.experience.ex6.time}
+          />
+          <Details
+            position={dictionary.about.experience.ex7.position}
+            company={dictionary.about.experience.ex7.company}
+            companyLink={dictionary.about.experience.ex7.companyLink}
+            work={dictionary.about.experience.ex7.work}
+            address={dictionary.about.experience.ex7.address}
+            time={dictionary.about.experience.ex7.time}
           />
         </ul>
       </div>
