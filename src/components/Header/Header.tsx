@@ -16,7 +16,7 @@ import useThemeSwithcher from "@/hooks/useThemeSwithcher";
 function Header() {
   const [mode, setMode] = useThemeSwithcher();
   return (
-    <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
+    <header className="w-full px-32 py-8 font-medium flex justify-between items-center dark:text-light">
       <nav className="flex items-center justify-center flex-wrap">
         <CustomLink
           title={dictionary.header.links.home}
@@ -35,9 +35,13 @@ function Header() {
         />
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className="rounded-full flex items-center p-1"
+          className={"rounded-full flex items-center p-1 justify-center"}
         >
-          {mode === "dark" ? <SunToMoonIcon /> : <MoonToSubIcon />}
+          {mode === "dark" ? (
+            <SunToMoonIcon className="fill-dark" />
+          ) : (
+            <MoonToSubIcon className="fill-dark" />
+          )}
           &nbsp;
         </button>
       </nav>
