@@ -51,8 +51,8 @@ function about() {
               <p className="font-medium my-4">{dictionary.about.p2}</p>
               <p className="font-medium">{dictionary.about.p3}</p>
             </div>
-            <div className="col-span-3 bg-light p-8 relative h-max rounded-2xl border border-solid border-dark">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+            <div className="col-span-3 bg-light p-8 relative h-max rounded-2xl border border-solid border-dark dark:bg-dark dark:border-light">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 className="rounded-2xl w-full h-auto"
                 alt={dictionary.owner}
