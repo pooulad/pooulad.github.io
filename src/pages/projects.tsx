@@ -11,6 +11,14 @@ import project2Img from "../assets/images/project2.png";
 import project3Img from "../assets/images/project3.png";
 import project4Img from "../assets/images/project4.png";
 
+type FeaturedProjectProps = {
+  type: string;
+  title: string;
+  summary: string;
+  img: any;
+  link: string;
+  github: string;
+};
 
 function projects() {
   return (
