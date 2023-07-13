@@ -145,6 +145,14 @@ export const dictionary = {
         address: "تهران، خیابان فلسطین",
         time: "1401-1402",
       },
+      ex8: {
+        position: "توسعه دهنده",
+        company: "امیران کالا",
+        companyLink: "https://amirankala.com/",
+        work : "طراحی وبسایت فروشگاهی چند منظوره و مجهز به سیستم غرفه داری برای فروشندگان.",
+        address: "تهران، تهران",
+        time: "1401-1402",
+      },
     },
   },
 };
