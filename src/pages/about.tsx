@@ -21,7 +21,6 @@ const AnimatedNumbers = ({ value }: any) => {
   }, [isInView, value]);
   useEffect(() => {
     springValue.on("change", (latest) => {
-      console.log(latest);
       if (ref.current && latest.toFixed(0) <= value) {
         ref.current.textContent = latest.toFixed();
       }
@@ -37,7 +36,7 @@ function about() {
         <title>{dictionary.head.about.title}</title>
         <meta name="description" content={dictionary.head.about.meta} />
       </Head>
-      <main className="flex items-center flex-col w-full justify-center">
+      <main className="flex items-center flex-col w-full justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             className="!text-6xl mb-16"
@@ -45,7 +44,7 @@ function about() {
           />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="flex flex-col col-span-3 items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 {dictionary.about.biography}
               </h2>
               <p className="font-medium">{dictionary.about.p1}</p>
@@ -68,7 +67,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   {dictionary.about.summary.satisfiedClients.text}
                 </h2>
               </div>
@@ -79,7 +78,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   {dictionary.about.summary.projectsCompleted.text}
                 </h2>
               </div>
@@ -90,7 +89,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   {dictionary.about.summary.yearsOfExperience.text}
                 </h2>
               </div>
@@ -101,7 +100,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   {dictionary.about.summary.workingHours.text}
                 </h2>
               </div>
