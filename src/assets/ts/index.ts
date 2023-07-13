@@ -5,3 +5,5 @@ export { default as TelegramIcon } from "./TelegramIcon";
 export { default as EmailIcon } from "./EmailIcon";
 export { default as LinkIcon } from "./LinkIcon";
 export { default as HiremeIcon } from "./HiremeIcon";
+export { default as SunToMoonIcon } from "./SunToMoonIcon";
+export { default as MoonToSubIcon } from "./MoonToSunIcon";
