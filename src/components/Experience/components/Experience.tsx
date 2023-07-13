@@ -127,6 +127,14 @@ function Experience() {
             address={dictionary.about.experience.ex7.address}
             time={dictionary.about.experience.ex7.time}
           />
+          <Details
+            position={dictionary.about.experience.ex8.position}
+            company={dictionary.about.experience.ex8.company}
+            companyLink={dictionary.about.experience.ex8.companyLink}
+            work={dictionary.about.experience.ex8.work}
+            address={dictionary.about.experience.ex8.address}
+            time={dictionary.about.experience.ex8.time}
+          />
         </ul>
       </div>
     </div>
