@@ -19,6 +19,37 @@ type FeaturedProjectProps = {
   link: string;
   github: string;
 };
+const FeaturedProject = ({
+  type,
+  title,
+  summary,
+  img,
+  link,
+  github,
+}: FeaturedProjectProps) => {
+  return (
+    <article>
+      <Link href={link} target={"_blank"}>
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div>
+        <span>{type}</span>
+        <Link href={link} target={"_blank"}>
+          <h2>{title}</h2>
+        </Link>
+        <p>{summary}</p>
+        <div>
+          <Link href={github} target={"_blank"}>
+            <GithubIcon />
+          </Link>
+          <Link href={github} target={"_blank"}>
+            {dictionary.projects.showProjectTitle}
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
 
 function projects() {
   return (
