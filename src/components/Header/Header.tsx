@@ -148,11 +148,11 @@ function Header() {
               &nbsp;
             </button>
           </nav>
-          <nav className="flex items-center justify-center flex-wrap">
+          <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 bg-light rounded-full sm:mx-1"
               href={dictionary.ownerSocials.githubAddress}
               target={"_blank"}
             >
@@ -161,7 +161,7 @@ function Header() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 rounded-full sm:mx-1"
               href={dictionary.ownerSocials.telegramAddress}
               target={"_blank"}
             >
@@ -170,7 +170,7 @@ function Header() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 rounded-full sm:mx-1"
               href={dictionary.ownerSocials.instagramAddress}
               target={"_blank"}
             >
@@ -179,7 +179,7 @@ function Header() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 rounded-full sm:mx-1"
               href={`mailto:${dictionary.ownerSocials.emailAddress}`}
               target={"_blank"}
             >
@@ -188,7 +188,7 @@ function Header() {
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3"
+              className="w-6 mx-3 rounded-full sm:mx-1"
               href={dictionary.ownerSocials.websiteAddress}
               target={"_blank"}
             >
