@@ -5,6 +5,8 @@ export default function InstagramIcon() {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       data-name="Layer 1"
       viewBox="0 0 128 128"
+      width="1.5em"
+      height="1.5em"
     >
       <defs>
         <clipPath id="b">
