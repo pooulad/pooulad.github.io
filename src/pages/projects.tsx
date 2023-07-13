@@ -6,6 +6,11 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import React, { Fragment, memo } from "react";
+import project1Img from "../assets/images/project1.png";
+import project2Img from "../assets/images/project2.png";
+import project3Img from "../assets/images/project3.png";
+import project4Img from "../assets/images/project4.png";
+
 
 function projects() {
   return (
