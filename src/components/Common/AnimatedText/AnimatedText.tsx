@@ -14,7 +14,7 @@ const qoute = {
     opacity: 1,
     transition: {
       delay: 0.5,
-      staggerChildren : 0.08
+      staggerChildren: 0.08,
     },
   },
 };
@@ -34,10 +34,10 @@ const singleWord = {
 
 function AnimatedText({ text, className }: AnimatedTextProps) {
   return (
-    <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden">
+    <div className="w-full mx-auto py-2 flex items-center justify-center text-center overflow-hidden dark:text-light">
       <motion.h1
         aria-hidden="true"
-        className={`inline-block text-dark font-bold text-8xl capitalize ${className}`}
+        className={`inline-block text-dark font-bold text-8xl capitalize dark:text-light ${className}`}
         variants={qoute}
         initial="initial"
         animate="animate"
