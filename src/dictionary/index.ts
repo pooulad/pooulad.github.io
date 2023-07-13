@@ -160,6 +160,38 @@ export const dictionary = {
     },
   },
   projects: {
-    title: "پروژه ها",
+    title: "دانش قدرت است",
+    showProjectTitle: "مشاهده پروژه",
+    project1: {
+      title: "ts-note-project",
+      link: "https://github.com/pooulad/ts-note-project",
+      github: "https://github.com/pooulad/ts-note-project",
+      summary: "A small project has been written about working with typescript",
+      type: "Featured Project",
+    },
+    project2: {
+      title: "crypto-tracker-react-api",
+      link: "https://github.com/pooulad/crypto-tracker-react-api",
+      github: "https://github.com/pooulad/crypto-tracker-react-api",
+      summary:
+        "with using axios package we can get data from CoinGecko and show them in react page",
+      type: "Featured Project",
+    },
+    project3: {
+      title: "glass-website-design",
+      link: "https://github.com/pooulad/glass-website-design",
+      github: "https://github.com/pooulad/glass-website-design",
+      summary:
+        "make a responsive glass website page with🟠 HTML🟠 and 🔵css3🔵",
+      type: "Featured Project",
+    },
+    project4: {
+      title: "redux-todo-app",
+      link: "https://github.com/pooulad/redux-todo-app",
+      github: "https://github.com/pooulad/redux-todo-app",
+      summary:
+        "A small project has been written about working with redux in ReactJS",
+      type: "Featured Project",
+    },
   },
 };
