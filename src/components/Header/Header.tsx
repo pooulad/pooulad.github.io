@@ -17,7 +17,7 @@ function Header() {
   const [mode, setMode] = useThemeSwithcher();
   return (
     <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
-      <nav>
+      <nav className="flex items-center justify-center flex-wrap">
         <CustomLink
           title={dictionary.header.links.home}
           link={"/"}
@@ -33,6 +33,13 @@ function Header() {
           link={"/projects"}
           classname="ml-4"
         />
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+          className="rounded-full flex items-center p-1"
+        >
+          {mode === "dark" ? <SunToMoonIcon /> : <MoonToSubIcon />}
+          &nbsp;
+        </button>
       </nav>
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
@@ -80,13 +87,6 @@ function Header() {
         >
           <AmirankalaIcon />
         </motion.a>
-        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
-          {mode === "dark" ? (
-            <SunToMoonIcon/>
-          ) : (
-            <MoonToSubIcon/>
-          )}
-        </button>
       </nav>
     </header>
   );
