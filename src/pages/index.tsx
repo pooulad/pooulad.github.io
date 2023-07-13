@@ -18,7 +18,7 @@ export default function Home() {
         <title>{dictionary.head.home.title}</title>
         <meta name="description" content={dictionary.head.home.meta} />
       </Head>
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0">
           <div className="flex items-center justify-between w-full">
             <div className="w-1/2 px-2">
@@ -39,7 +39,7 @@ export default function Home() {
               <div className="flex items-center self-start mt-2">
                 <Link
                   download={true}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
                   href={"./poulad.pdf"}
                   target={"_blank"}
                 >
