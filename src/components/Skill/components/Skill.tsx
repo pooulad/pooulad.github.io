@@ -11,11 +11,10 @@ const SkillGenerator = ({ name, x, y }: SkillGeneratorProps) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="cursor-pointer flex items-center justify-center rounded-full font-semibold absolute bg-dark text-light py-3 px-6 shadow-dark"
+      className="cursor-pointer flex items-center justify-center rounded-full font-semibold absolute bg-dark text-light dark:text-dark dark:bg-light py-3 px-6 shadow-dark"
       initial={{ x: 0, y: 0 }}
-      whileInView={{ x: x, y: y }}
+      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
       viewport={{ once: true }}
-      transition={{ duration: 1.5 }}
     >
       {name}
     </motion.div>
@@ -28,7 +27,7 @@ function Skill() {
       <h2 className="font-bold text-8xl mt-64 text-center">
         {dictionary.about.skill.title}
       </h2>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <SkillGenerator
           name={dictionary.about.skill.fullStack}
           x="0vw"
