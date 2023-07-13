@@ -6,6 +6,8 @@ import {
   EmailIcon,
   GithubIcon,
   InstagramIcon,
+  MoonToSubIcon,
+  SunToMoonIcon,
   TelegramIcon,
 } from "@/assets/ts";
 import { motion } from "framer-motion";
@@ -78,10 +80,12 @@ function Header() {
         >
           <AmirankalaIcon />
         </motion.a>
-        <button
-          onClick={() => setMode(mode === "light" ? "dark" : "light")}
-        >
-          {mode === "dark" ?  : }
+        <button onClick={() => setMode(mode === "light" ? "dark" : "light")}>
+          {mode === "dark" ? (
+            <SunToMoonIcon/>
+          ) : (
+            <MoonToSubIcon/>
+          )}
         </button>
       </nav>
     </header>
