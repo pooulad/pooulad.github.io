@@ -57,6 +57,8 @@ function about() {
                 className="rounded-2xl w-full h-auto"
                 alt={dictionary.owner}
                 src={ProfilePic2}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="flex flex-col col-span-2 justify-between items-end">
