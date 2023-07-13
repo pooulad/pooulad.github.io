@@ -77,7 +77,7 @@ export const dictionary = {
       html: "HTML",
       css: "CSS",
       js: "JavaScript",
-      tailwind: "Tawilwind CSS",
+      tailwind: "Tailwind CSS",
       php: "PHP",
       typescript: "TypeScript",
       graphql: "GraphQl",
