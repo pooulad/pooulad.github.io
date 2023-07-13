@@ -1,5 +1,5 @@
 import React, { memo, useEffect, useState } from "react";
-import { CustomLink } from "../Common";
+import { CustomLink, CustomLinkMobile } from "../Common";
 import { dictionary } from "@/dictionary";
 import {
   AmirankalaIcon,
@@ -20,7 +20,7 @@ function Header() {
   };
   const [mode, setMode] = useThemeSwithcher();
   return (
-    <header className="w-full px-32 py-8 font-medium flex justify-between items-center dark:text-light">
+    <header className="w-full relative px-32 py-8 font-medium flex justify-between items-center dark:text-light">
       <button
         onClick={handleOpen}
         className="flex-col justify-center items-center hidden lg:flex"
@@ -118,6 +118,85 @@ function Header() {
           </motion.a>
         </nav>
       </div>
+      {isOpen ? (
+        <div className="min-w-[70vw] z-30 bg-dark/90 dark:bg-light/75 rounded-lg backdrop-blur-md py-32 flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <nav className="flex flex-col justify-center items-center">
+            <CustomLinkMobile
+              toggle={handleOpen}
+              title={dictionary.header.links.home}
+              link={"/"}
+            />
+            <CustomLinkMobile
+              toggle={handleOpen}
+              title={dictionary.header.links.about}
+              link={"/about"}
+            />
+            <CustomLinkMobile
+              toggle={handleOpen}
+              title={dictionary.header.links.projects}
+              link={"/projects"}
+            />
+            <button
+              onClick={() => setMode(mode === "light" ? "dark" : "light")}
+              className={"rounded-full flex items-center p-1 justify-center"}
+            >
+              {mode === "dark" ? (
+                <SunToMoonIcon className="fill-dark" />
+              ) : (
+                <MoonToSubIcon className="fill-dark" />
+              )}
+              &nbsp;
+            </button>
+          </nav>
+          <nav className="flex items-center justify-center flex-wrap">
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3"
+              href={dictionary.ownerSocials.githubAddress}
+              target={"_blank"}
+            >
+              <GithubIcon />
+            </motion.a>
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3"
+              href={dictionary.ownerSocials.telegramAddress}
+              target={"_blank"}
+            >
+              <TelegramIcon />
+            </motion.a>
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3"
+              href={dictionary.ownerSocials.instagramAddress}
+              target={"_blank"}
+            >
+              <InstagramIcon />
+            </motion.a>
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3"
+              href={`mailto:${dictionary.ownerSocials.emailAddress}`}
+              target={"_blank"}
+            >
+              <EmailIcon />
+            </motion.a>
+            <motion.a
+              whileHover={{ y: -2 }}
+              whileTap={{ scale: 0.9 }}
+              className="w-6 mx-3"
+              href={dictionary.ownerSocials.websiteAddress}
+              target={"_blank"}
+            >
+              <AmirankalaIcon />
+            </motion.a>
+          </nav>
+        </div>
+      ) : null}
     </header>
   );
 }
