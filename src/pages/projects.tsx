@@ -58,6 +58,37 @@ function projects() {
         <title>{dictionary.head.projects.title}</title>
         <meta name="description" content={dictionary.head.projects.meta} />
       </Head>
+      <main className="w-full flex flex-col items-center justify-center mb-16">
+        <Layout className="pt-16">
+          <AnimatedText text={dictionary.projects.title} />
+          <div className="grid grid-cols-12 gap-24">
+            <div className="col-span-12">
+              <FeaturedProject
+                title={dictionary.projects.project1.title}
+                type={dictionary.projects.project1.type}
+                summary={dictionary.projects.project1.summary}
+                github={dictionary.projects.project1.github}
+                link={dictionary.projects.project1.link}
+                img={project1Img}
+              />
+            </div>
+            <div className="col-span-6"></div>
+            <div className="col-span-6"></div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title={dictionary.projects.project1.title}
+                type={dictionary.projects.project1.type}
+                summary={dictionary.projects.project1.summary}
+                github={dictionary.projects.project1.github}
+                link={dictionary.projects.project1.link}
+                img={project4Img}
+              />
+            </div>
+            <div className="col-span-6"></div>
+            <div className="col-span-6"></div>
+          </div>
+        </Layout>
+      </main>
     </Fragment>
   );
 }
