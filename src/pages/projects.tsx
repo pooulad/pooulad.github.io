@@ -89,7 +89,7 @@ const SimpleProject = ({
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col justify-between items-start mt-2">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
         <Link
           className="hover:underline underline-offset-2"
           href={link}
@@ -121,7 +121,7 @@ function projects() {
         <title>{dictionary.head.projects.title}</title>
         <meta name="description" content={dictionary.head.projects.meta} />
       </Head>
-      <main className="w-full flex flex-col items-center justify-center mb-16">
+      <main className="w-full flex flex-col items-center justify-center mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text={dictionary.projects.title} className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-24">
