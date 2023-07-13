@@ -19,21 +19,21 @@ export default function Home() {
         <meta name="description" content={dictionary.head.home.meta} />
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
-        <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
+        <Layout className="pt-0 md:pt-16 sm:pt-8">
+          <div className="flex items-center justify-between w-full lg:flex-col">
             <div className="w-1/2 px-2">
               <Image
                 src={ProfilePic}
                 alt={dictionary.owner}
-                className="w-full h-auto"
+                className="w-full h-auto md:inline-block md:w-full"
                 priority={true}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
               />
             </div>
-            <div className="w-1/2 px-2 flex flex-col items-center self-center">
+            <div className="w-1/2 px-2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
                 text={dictionary.home.h1Tag}
-                className="!text-6xl !text-right"
+                className="!text-6xl !text-right xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium">
                 {dictionary.home.pTag}
