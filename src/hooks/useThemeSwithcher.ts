@@ -2,7 +2,7 @@ import React, { ReactNode, memo, useEffect, useState } from "react";
 
 function useThemeSwithcher() {
   const preferDarkModeQuery = "prefer-color-schema: dark";
-  const [mode, setMode] = useState<any>("light");
+  const [mode, setMode] = useState<any>("");
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkModeQuery);
     const userPref = window.localStorage.getItem("theme");
@@ -24,9 +24,10 @@ function useThemeSwithcher() {
           document.documentElement.classList.remove("dark");
         }
       }
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
     };
+    handleChange(); 
+    mediaQuery.addEventListener("change", handleChange);
+    return () => mediaQuery.removeEventListener("change", handleChange);
   }, []);
   useEffect(() => {
     if (mode === "dark") {
