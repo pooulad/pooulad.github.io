@@ -19,6 +19,13 @@ type FeaturedProjectProps = {
   link: string;
   github: string;
 };
+type SimpleProjectProps = {
+  type: string;
+  title: string;
+  img: any;
+  link: string;
+  github: string;
+};
 const FeaturedProject = ({
   type,
   title,
@@ -28,7 +35,8 @@ const FeaturedProject = ({
   github,
 }: FeaturedProjectProps) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl" />
       <Link
         className="w-1/2 overflow-hidden cursor-pointer rounded-lg"
         href={link}
@@ -63,6 +71,49 @@ const FeaturedProject = ({
   );
 };
 
+const SimpleProject = ({
+  title,
+  type,
+  img,
+  link,
+  github,
+}: SimpleProjectProps) => {
+  return (
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl" />{" "}
+      <Link
+        className="w-full overflow-hidden cursor-pointer rounded-lg"
+        href={link}
+        target={"_blank"}
+      >
+        <Image src={img} alt={title} className="w-full h-auto" />
+      </Link>
+      <div className="w-full flex flex-col justify-between items-start mt-2">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <Link
+          className="hover:underline underline-offset-2"
+          href={link}
+          target={"_blank"}
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+        </Link>
+        <div className="w-full mt-2 flex items-center justify-between">
+          <Link className="w-8" href={github} target={"_blank"}>
+            <GithubIcon />
+          </Link>
+          <Link
+            className="text-lg font-semibold underline"
+            href={github}
+            target={"_blank"}
+          >
+            {dictionary.projects.showProjectTitle}
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};
+
 function projects() {
   return (
     <Fragment>
@@ -73,7 +124,7 @@ function projects() {
       <main className="w-full flex flex-col items-center justify-center mb-16">
         <Layout className="pt-16">
           <AnimatedText text={dictionary.projects.title} className="mb-16" />
-          <div className="grid grid-cols-12 gap-24">
+          <div className="grid grid-cols-12 gap-24 gap-y-24">
             <div className="col-span-12">
               <FeaturedProject
                 title={dictionary.projects.project1.title}
@@ -84,8 +135,24 @@ function projects() {
                 img={project1Img}
               />
             </div>
-            <div className="col-span-6"></div>
-            <div className="col-span-6"></div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project2.title}
+                type={dictionary.projects.project2.type}
+                github={dictionary.projects.project2.github}
+                link={dictionary.projects.project2.link}
+                img={project2Img}
+              />
+            </div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project3.title}
+                type={dictionary.projects.project3.type}
+                github={dictionary.projects.project3.github}
+                link={dictionary.projects.project3.link}
+                img={project3Img}
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title={dictionary.projects.project1.title}
@@ -96,8 +163,6 @@ function projects() {
                 img={project4Img}
               />
             </div>
-            <div className="col-span-6"></div>
-            <div className="col-span-6"></div>
           </div>
         </Layout>
       </main>

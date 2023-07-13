@@ -160,7 +160,7 @@ export const dictionary = {
     },
   },
   projects: {
-    title: "دانش قدرت است",
+    title: "دانش قدرت است.",
     showProjectTitle: "مشاهده پروژه",
     project1: {
       title: "ts-note-project",
