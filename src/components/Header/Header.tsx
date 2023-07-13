@@ -1,6 +1,4 @@
-import { useTheme } from "next-themes";
 import React, { memo, useEffect, useState } from "react";
-import Logo from "./Logo";
 import { CustomLink } from "../Common";
 import { dictionary } from "@/dictionary";
 import {
@@ -11,18 +9,13 @@ import {
   TelegramIcon,
 } from "@/assets/ts";
 import { motion } from "framer-motion";
+import useThemeSwithcher from "@/hooks/useThemeSwithcher";
 
 function Header() {
-  const { theme, setTheme } = useTheme();
-  const [hasMounted, setHasMounted] = useState(false);
-  useEffect(() => setHasMounted(true), []);
-  if (!hasMounted) return null;
+  const [mode, setMode] = useThemeSwithcher();
   return (
     <header className="w-full px-32 py-8 font-medium flex justify-between items-center">
       <nav>
-        {/* The current theme is: {theme}
-        <button onClick={() => setTheme("light")}>روشن</button>
-        <button onClick={() => setTheme("dark")}>تیره</button> */}
         <CustomLink
           title={dictionary.header.links.home}
           link={"/"}
@@ -85,10 +78,12 @@ function Header() {
         >
           <AmirankalaIcon />
         </motion.a>
+        <button
+          onClick={() => setMode(mode === "light" ? "dark" : "light")}
+        >
+          {mode === "dark" ?  : }
+        </button>
       </nav>
-      {/* <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-        <Logo />
-      </div> */}
     </header>
   );
 }
