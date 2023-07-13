@@ -2,7 +2,7 @@ import React, { ReactNode, memo, useEffect, useState } from "react";
 
 function useThemeSwithcher() {
   const preferDarkModeQuery = "prefer-color-schema: dark";
-  const [mode, setMode] = useState<any>("");
+  const [mode, setMode] = useState<any>("light");
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkModeQuery);
     const userPref = window.localStorage.getItem("theme");
