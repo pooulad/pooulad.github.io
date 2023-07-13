@@ -28,21 +28,33 @@ const FeaturedProject = ({
   github,
 }: FeaturedProjectProps) => {
   return (
-    <article>
-      <Link href={link} target={"_blank"}>
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl">
+      <Link
+        className="w-1/2 overflow-hidden cursor-pointer rounded-lg"
+        href={link}
+        target={"_blank"}
+      >
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
-      <div>
-        <span>{type}</span>
-        <Link href={link} target={"_blank"}>
-          <h2>{title}</h2>
+      <div className="w-1/2 flex flex-col justify-between items-start pr-6">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <Link
+          className="hover:underline underline-offset-2"
+          href={link}
+          target={"_blank"}
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
-        <p>{summary}</p>
-        <div>
-          <Link href={github} target={"_blank"}>
+        <p className="my-2 font-medium text-dark">{summary}</p>
+        <div className="mt-2 flex items-center">
+          <Link className="w-10" href={github} target={"_blank"}>
             <GithubIcon />
           </Link>
-          <Link href={github} target={"_blank"}>
+          <Link
+            className="mr-4 bg-dark text-light p-2 px-6 text-lg font-semibold rounded-lg"
+            href={github}
+            target={"_blank"}
+          >
             {dictionary.projects.showProjectTitle}
           </Link>
         </div>
@@ -60,7 +72,7 @@ function projects() {
       </Head>
       <main className="w-full flex flex-col items-center justify-center mb-16">
         <Layout className="pt-16">
-          <AnimatedText text={dictionary.projects.title} />
+          <AnimatedText text={dictionary.projects.title} className="mb-16" />
           <div className="grid grid-cols-12 gap-24">
             <div className="col-span-12">
               <FeaturedProject
