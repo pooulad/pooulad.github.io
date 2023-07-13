@@ -166,8 +166,9 @@ export const dictionary = {
       title: "ts-note-project",
       link: "https://github.com/pooulad/ts-note-project",
       github: "https://github.com/pooulad/ts-note-project",
-      summary: "A small project has been written about working with typescript",
-      type: "Featured Project",
+      summary:
+        "یک پروژه ساده نوشته شده با ReactJS و TypeScript برای درک بهتر کارکردن و اتصال TS به برنامه های React. در این پروژه به نحوه استفاده از تایپ ها در هنگام ساخت، بروزرسانی و یا حذف آیتم های برنامه میپردازیم.",
+      type: "ویژه",
     },
     project2: {
       title: "crypto-tracker-react-api",
@@ -175,7 +176,7 @@ export const dictionary = {
       github: "https://github.com/pooulad/crypto-tracker-react-api",
       summary:
         "with using axios package we can get data from CoinGecko and show them in react page",
-      type: "Featured Project",
+      type: "ویژه",
     },
     project3: {
       title: "glass-website-design",
@@ -183,7 +184,7 @@ export const dictionary = {
       github: "https://github.com/pooulad/glass-website-design",
       summary:
         "make a responsive glass website page with🟠 HTML🟠 and 🔵css3🔵",
-      type: "Featured Project",
+      type: "ویژه",
     },
     project4: {
       title: "redux-todo-app",
@@ -191,7 +192,7 @@ export const dictionary = {
       github: "https://github.com/pooulad/redux-todo-app",
       summary:
         "A small project has been written about working with redux in ReactJS",
-      type: "Featured Project",
+      type: "ویژه",
     },
   },
 };
