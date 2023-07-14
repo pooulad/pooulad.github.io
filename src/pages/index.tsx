@@ -10,6 +10,7 @@ import { LinkIcon } from "@/assets/ts";
 import { CustomLink } from "@/components/Common";
 import Hireme from "@/components/Hireme/Hireme";
 import LightBulb from "../assets/images/miscellaneous_icons_1.cd3c5e27.svg";
+import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <title>{dictionary.head.home.title}</title>
         <meta name="description" content={dictionary.head.home.meta} />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen dark:text-light">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex items-center justify-between w-full lg:flex-col">
