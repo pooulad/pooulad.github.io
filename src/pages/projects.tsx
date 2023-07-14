@@ -40,7 +40,7 @@ const FeaturedProject = ({
     <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light" />
       <Link
-        className="w-1/2 overflow-hidden cursor-pointer rounded-lg"
+        className="w-1/2 overflow-hidden cursor-pointer rounded-lg lg:w-full"
         href={link}
         target={"_blank"}
       >
@@ -52,8 +52,8 @@ const FeaturedProject = ({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
       </Link>
-      <div className="w-1/2 flex flex-col justify-between items-start pr-6">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+      <div className="w-1/2 flex flex-col justify-between items-start pr-6 lg:w-full lg:pt-6">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl xs:text-base">
           {type}
         </span>
         <Link
@@ -61,7 +61,7 @@ const FeaturedProject = ({
           href={link}
           target={"_blank"}
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm  ">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
@@ -69,7 +69,7 @@ const FeaturedProject = ({
             <GithubIcon />
           </Link>
           <Link
-            className="mr-4 bg-dark text-light dark:text-dark dark:bg-light p-2 px-6 text-lg font-semibold rounded-lg"
+            className="mr-4 bg-dark text-light dark:text-dark dark:bg-light p-2 px-6 text-lg font-semibold rounded-lg sm:text-base"
             href={github}
             target={"_blank"}
           >
