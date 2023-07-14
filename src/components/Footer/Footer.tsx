@@ -1,5 +1,6 @@
 import Layout from "@/Layout";
 import { dictionary } from "@/dictionary";
+import Image from "next/image";
 import Link from "next/link";
 import React, { memo } from "react";
 
@@ -25,9 +26,11 @@ function Footer() {
           </span>
         </div>
         <a href={dictionary.ownerCoffeeBede.link} target={"_blank"}>
-          <img
-            alt={dictionary.ownerCoffeeBede.alt}
+          <Image
+           alt='no image'
             className="w-52"
+            width={200}
+            height={100}
             src={dictionary.ownerCoffeeBede.src}
           />
         </a>
