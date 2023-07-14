@@ -4,8 +4,11 @@ import Head from "next/head";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
 import { Fragment } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useRouter } from "next/router";
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
   return (
     <Fragment>
       <Head>
@@ -14,7 +17,9 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
       <main className="bg-light w-full min-h-screen dark:bg-dark">
         <Header />
-        <Component {...pageProps} />
+        <AnimatePresence mode="wait">
+          <Component key={router.asPath} {...pageProps} />
+        </AnimatePresence>
         <Footer />
       </main>
     </Fragment>
