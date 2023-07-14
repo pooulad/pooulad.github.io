@@ -7,7 +7,12 @@ export default function LiIcon({ reference }: any) {
   });
   return (
     <figure className="stroke-dark absolute right-0 dark:stroke-light">
-      <svg className="-rotate-90 md:w-[60px] md:h-[60px] xs:w-[40px] xs:h-[40px]" width="75" height="75" viewBox="0 0 100 100">
+      <svg
+        className="-rotate-90 md:w-[60px] md:h-[60px] xs:w-[40px] xs:h-[40px]"
+        width="75"
+        height="75"
+        viewBox="0 0 100 100"
+      >
         <circle
           cx="75"
           cy="50"
