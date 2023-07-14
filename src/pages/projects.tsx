@@ -12,6 +12,7 @@ import project3Img from "../assets/images/project3.png";
 import project4Img from "../assets/images/project4.jpg";
 import project5Img from "../assets/images/project5.png";
 import project6Img from "../assets/images/project6.png";
+import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 
 type FeaturedProjectProps = {
   type: string;
@@ -61,9 +62,13 @@ const FeaturedProject = ({
           href={link}
           target={"_blank"}
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link className="w-10" href={github} target={"_blank"}>
             <GithubIcon />
@@ -113,7 +118,9 @@ const SimpleProject = ({
           href={link}
           target={"_blank"}
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-2xl">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-2xl">
+            {title}
+          </h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link className="w-8 md:w-6" href={github} target={"_blank"}>
@@ -139,6 +146,7 @@ function projects() {
         <title>{dictionary.head.projects.title}</title>
         <meta name="description" content={dictionary.head.projects.meta} />
       </Head>
+      <TransitionEffect />
       <main className="w-full flex flex-col items-center justify-center mb-16 dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
