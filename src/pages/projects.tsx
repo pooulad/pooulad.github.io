@@ -113,7 +113,7 @@ const SimpleProject = ({
           href={link}
           target={"_blank"}
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-2xl">{title}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
           <Link className="w-8" href={github} target={"_blank"}>
