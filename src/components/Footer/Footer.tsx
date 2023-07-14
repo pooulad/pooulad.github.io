@@ -6,11 +6,11 @@ import React, { memo } from "react";
 function Footer() {
   return (
     <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg dark:text-light dark:border-light">
-      <Layout className="py-8 flex items-center justify-between">
+      <Layout className="py-8 flex items-center justify-between lg:py-6 lg:flex-col">
         <span>
           {new Date().getFullYear()} &copy; {dictionary.footer.copyRight}
         </span>
-        <div className="flex items-center">
+        <div className="flex items-center lg:py-2">
           <span>{dictionary.footer.madeWith}</span>
           <span className="text-primary dark:text-primaryDark text-2xl px-1">&#9825;</span>
           <span>
