@@ -20,7 +20,7 @@ function Header() {
   };
   const [mode, setMode] = useThemeSwithcher();
   return (
-    <header className="w-full relative px-32 py-8 font-medium flex justify-between items-center dark:text-light">
+    <header className="w-full relative px-32 py-8 font-medium flex justify-between items-center dark:text-light z-10 lg:px-16 md:px-12 sm:px-8">
       <button
         onClick={handleOpen}
         className="flex-col justify-center items-center hidden lg:flex"
