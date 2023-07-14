@@ -39,11 +39,11 @@ function about() {
       <main className="flex items-center flex-col w-full justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            className="!text-6xl mb-16"
+            className="!text-6xl mb-16 lg:!text-7xl md:!text-6xl sm:!text-4xl sm:mb-8"
             text={dictionary.about.title}
           />
-          <div className="grid w-full grid-cols-8 gap-16">
-            <div className="flex flex-col col-span-3 items-start justify-start">
+          <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
+            <div className="flex flex-col col-span-3 items-start justify-start xl:col-span-4 md:order-2 md:col-span-8">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 {dictionary.about.biography}
               </h2>
@@ -51,7 +51,7 @@ function about() {
               <p className="font-medium my-4">{dictionary.about.p2}</p>
               <p className="font-medium">{dictionary.about.p3}</p>
             </div>
-            <div className="col-span-3 bg-light p-8 relative h-max rounded-2xl border border-solid border-dark dark:bg-dark dark:border-light">
+            <div className="col-span-3 bg-light p-8 relative h-max rounded-2xl border border-solid border-dark dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 className="rounded-2xl w-full h-auto"
@@ -61,7 +61,7 @@ function about() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="flex flex-col col-span-2 justify-between items-end">
+            <div className="flex flex-col col-span-2 justify-between items-end xl:col-span-8 xl:flex-row xl:items-center md:order-3">
               <div className="flex flex-col items-end justify-center">
                 <span className="inline-block font-bold text-7xl">
                   <AnimatedNumbers
