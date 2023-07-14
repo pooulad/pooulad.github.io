@@ -141,7 +141,10 @@ function projects() {
       </Head>
       <main className="w-full flex flex-col items-center justify-center mb-16 dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text={dictionary.projects.title} className="mb-16" />
+          <AnimatedText
+            text={dictionary.projects.title}
+            className="mb-16 lg:!text-7xl sm:!mb-8 sm:!text-6xl xs:!text-4xl"
+          />
           <div className="grid grid-cols-12 gap-24 gap-y-24">
             <div className="col-span-12">
               <FeaturedProject
