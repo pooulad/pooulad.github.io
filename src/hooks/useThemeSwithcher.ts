@@ -1,7 +1,7 @@
 import React, { ReactNode, memo, useEffect, useState } from "react";
 
 function useThemeSwithcher() {
-  const preferDarkModeQuery = "prefer-color-schema: dark";
+  const preferDarkModeQuery = "prefers-color-schema: dark";
   const [mode, setMode] = useState<any>("");
   useEffect(() => {
     const mediaQuery = window.matchMedia(preferDarkModeQuery);
