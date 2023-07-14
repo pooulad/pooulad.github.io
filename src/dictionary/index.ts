@@ -25,6 +25,7 @@ export const dictionary = {
     githubAddress: "https://github.com/pooulad",
     telegramAddress: "https://t.me/pouladpesar",
     instagramAddress: "https://instagram.com/_pooulad_",
+    linkedinAddress: "https://www.linkedin.com/in/amir-mahdi-pouladi-803748283",
   },
   head: {
     home: {

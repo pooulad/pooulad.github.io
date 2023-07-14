@@ -12,6 +12,7 @@ import {
 } from "@/assets/ts";
 import { motion } from "framer-motion";
 import useThemeSwithcher from "@/hooks/useThemeSwithcher";
+import LinkedinIcon from "@/assets/ts/LinkedinIcon";
 
 function Header() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -79,6 +80,15 @@ function Header() {
             target={"_blank"}
           >
             <GithubIcon />
+          </motion.a>
+          <motion.a
+            whileHover={{ y: -2 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-6 mx-3"
+            href={dictionary.ownerSocials.linkedinAddress}
+            target={"_blank"}
+          >
+            <LinkedinIcon />
           </motion.a>
           <motion.a
             whileHover={{ y: -2 }}
