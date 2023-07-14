@@ -194,5 +194,13 @@ export const dictionary = {
         "A small project has been written about working with redux in ReactJS",
       type: "ویژه",
     },
+    project5: {
+      title: "go-bill-project",
+      link: "https://github.com/pooulad/go-bill-project",
+      github: "https://github.com/pooulad/go-bill-project",
+      summary:
+        "یک پروژه ساده نوشته شده با GO برای ثبت سفارش کاربران و نمایش کامل فاکتور و جزئیات هر سفارش",
+      type: "ویژه",
+    },
   },
 };

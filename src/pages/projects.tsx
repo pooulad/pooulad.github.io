@@ -10,6 +10,7 @@ import project1Img from "../assets/images/project1.png";
 import project2Img from "../assets/images/project2.png";
 import project3Img from "../assets/images/project3.png";
 import project4Img from "../assets/images/project4.png";
+import project5Img from "../assets/images/project5.png";
 
 type FeaturedProjectProps = {
   type: string;
@@ -171,11 +172,20 @@ function projects() {
             </div>
             <div className="col-span-12">
               <FeaturedProject
-                title={dictionary.projects.project1.title}
-                type={dictionary.projects.project1.type}
-                summary={dictionary.projects.project1.summary}
-                github={dictionary.projects.project1.github}
-                link={dictionary.projects.project1.link}
+                title={dictionary.projects.project5.title}
+                type={dictionary.projects.project5.type}
+                summary={dictionary.projects.project5.summary}
+                github={dictionary.projects.project5.github}
+                link={dictionary.projects.project5.link}
+                img={project5Img}
+              />
+            </div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project4.title}
+                type={dictionary.projects.project4.type}
+                github={dictionary.projects.project4.github}
+                link={dictionary.projects.project4.link}
                 img={project4Img}
               />
             </div>
