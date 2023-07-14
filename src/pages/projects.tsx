@@ -90,7 +90,7 @@ const SimpleProject = ({
 }: SimpleProjectProps) => {
   return (
     <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light dark:border-light dark:bg-dark p-6 relative xs:p-4">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl" />
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light rounded-br-3xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]" />
       <Link
         className="w-full overflow-hidden cursor-pointer rounded-lg"
         href={link}
@@ -105,7 +105,7 @@ const SimpleProject = ({
         />
       </Link>
       <div className="w-full flex flex-col justify-between items-start mt-2">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+        <span className="text-primary dark:text-primaryDark font-medium text-xl lg:text-lg md:text-base">
           {type}
         </span>
         <Link
