@@ -69,7 +69,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   {dictionary.about.summary.satisfiedClients.text}
                 </h2>
               </div>
@@ -80,7 +80,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   {dictionary.about.summary.projectsCompleted.text}
                 </h2>
               </div>
@@ -91,7 +91,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   {dictionary.about.summary.yearsOfExperience.text}
                 </h2>
               </div>
@@ -102,7 +102,7 @@ function about() {
                   />
                   +
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75 xl:text-center md:text-lg sm:text-base xs:text-sm">
                   {dictionary.about.summary.workingHours.text}
                 </h2>
               </div>
