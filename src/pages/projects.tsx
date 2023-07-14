@@ -37,7 +37,7 @@ const FeaturedProject = ({
   github,
 }: FeaturedProjectProps) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light dark:bg-dark dark:border-light shadow-2xl p-12 relative rounded-br-2xl lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl dark:bg-light xs:-right-2 sm:h-[102%] xs:w-full xs:rounded-[1.5rem]" />
       <Link
         className="w-1/2 overflow-hidden cursor-pointer rounded-lg lg:w-full"
@@ -61,7 +61,7 @@ const FeaturedProject = ({
           href={link}
           target={"_blank"}
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm  ">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-sm">{title}</h2>
         </Link>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
@@ -69,7 +69,7 @@ const FeaturedProject = ({
             <GithubIcon />
           </Link>
           <Link
-            className="mr-4 bg-dark text-light dark:text-dark dark:bg-light p-2 px-6 text-lg font-semibold rounded-lg sm:text-base"
+            className="mr-4 bg-dark text-light dark:text-dark dark:bg-light p-2 px-6 text-lg font-semibold rounded-lg sm:text-base sm:px-4"
             href={github}
             target={"_blank"}
           >
@@ -116,11 +116,11 @@ const SimpleProject = ({
           <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-2xl">{title}</h2>
         </Link>
         <div className="w-full mt-2 flex items-center justify-between">
-          <Link className="w-8" href={github} target={"_blank"}>
+          <Link className="w-8 md:w-6" href={github} target={"_blank"}>
             <GithubIcon />
           </Link>
           <Link
-            className="text-lg font-semibold underline"
+            className="text-lg font-semibold underline md:text-base"
             href={github}
             target={"_blank"}
           >
@@ -145,7 +145,7 @@ function projects() {
             text={dictionary.projects.title}
             className="mb-16 lg:!text-7xl sm:!mb-8 sm:!text-6xl xs:!text-4xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-24 xl:gap-x-16 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-24 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title={dictionary.projects.project1.title}
@@ -156,7 +156,7 @@ function projects() {
                 img={project1Img}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <SimpleProject
                 title={dictionary.projects.project4.title}
                 type={dictionary.projects.project4.type}
@@ -165,7 +165,7 @@ function projects() {
                 img={project4Img}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <SimpleProject
                 title={dictionary.projects.project6.title}
                 type={dictionary.projects.project6.type}
@@ -184,7 +184,7 @@ function projects() {
                 img={project5Img}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <SimpleProject
                 title={dictionary.projects.project2.title}
                 type={dictionary.projects.project2.type}
@@ -193,7 +193,7 @@ function projects() {
                 img={project2Img}
               />
             </div>
-            <div className="col-span-6">
+            <div className="col-span-6 sm:col-span-12">
               <SimpleProject
                 title={dictionary.projects.project3.title}
                 type={dictionary.projects.project3.type}
