@@ -9,7 +9,7 @@ import React, { Fragment, memo } from "react";
 import project1Img from "../assets/images/project1.png";
 import project2Img from "../assets/images/project2.png";
 import project3Img from "../assets/images/project3.png";
-import project4Img from "../assets/images/project4.png";
+import project4Img from "../assets/images/project4.jpg";
 import project5Img from "../assets/images/project5.png";
 import project6Img from "../assets/images/project6.png";
 
@@ -99,7 +99,7 @@ const SimpleProject = ({
         <Image
           src={img}
           alt={title}
-          className="w-full h-auto"
+          className="w-full h-[250px]"
           priority={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
