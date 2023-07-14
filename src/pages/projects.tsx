@@ -99,7 +99,7 @@ const SimpleProject = ({
         <Image
           src={img}
           alt={title}
-          className="w-full h-[250px]"
+          className="w-full h-auto"
           priority={true}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
         />
