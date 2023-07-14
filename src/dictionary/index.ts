@@ -202,5 +202,13 @@ export const dictionary = {
         "یک پروژه ساده نوشته شده با GO برای ثبت سفارش کاربران و نمایش کامل فاکتور و جزئیات هر سفارش",
       type: "ویژه",
     },
+    project6: {
+      title: "go-webserver",
+      link: "https://github.com/pooulad/go-webserver",
+      github: "https://github.com/pooulad/go-webserver",
+      summary:
+        "یک پروژه ساده نوشته شده با GO برای ایجاد روت های مختلف برنامه و نمایش سرور",
+      type: "ویژه",
+    },
   },
 };

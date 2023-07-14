@@ -11,6 +11,7 @@ import project2Img from "../assets/images/project2.png";
 import project3Img from "../assets/images/project3.png";
 import project4Img from "../assets/images/project4.png";
 import project5Img from "../assets/images/project5.png";
+import project6Img from "../assets/images/project6.png";
 
 type FeaturedProjectProps = {
   type: string;
@@ -187,6 +188,15 @@ function projects() {
                 github={dictionary.projects.project4.github}
                 link={dictionary.projects.project4.link}
                 img={project4Img}
+              />
+            </div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project6.title}
+                type={dictionary.projects.project6.type}
+                github={dictionary.projects.project6.github}
+                link={dictionary.projects.project6.link}
+                img={project6Img}
               />
             </div>
           </div>
