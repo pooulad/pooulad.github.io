@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/hooks/useThemeSwithcher.ts", "src/components/TransitionEffect/TransitionEffect.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/hooks/useThemeSwithcher.ts", "src/components/TransitionEffect/TransitionEffect.tsx", "src/assets/ts/SunToMoonIcon/index.jsx", "src/assets/ts/MoonToSunIcon/index.jsx"],
   "exclude": ["node_modules"]
 }
