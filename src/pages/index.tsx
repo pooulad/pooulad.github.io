@@ -35,13 +35,13 @@ export default function Home() {
                 text={dictionary.home.h1Tag}
                 className="!text-6xl !text-right xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium md:text-sm sm:text-xs">
                 {dictionary.home.pTag}
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
                   download={true}
-                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light"
+                  className="flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:text-dark  hover:bg-light border-2 border-solid border-transparent hover:border-dark dark:bg-light dark:text-dark hover:dark:bg-dark hover:dark:text-light hover:dark:border-light md:p-2 md:px-4 md:text-base"
                   href={"./poulad.pdf"}
                   target={"_blank"}
                 >
@@ -53,7 +53,7 @@ export default function Home() {
                 <CustomLink
                   title={dictionary.home.contactMeTitle}
                   link={`mailto:${dictionary.ownerSocials.emailAddress}`}
-                  classname="mx-4 font-bold"
+                  classname="mx-4 font-bold md:text-base"
                 />
               </div>
             </div>
