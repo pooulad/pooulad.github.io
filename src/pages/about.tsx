@@ -8,6 +8,7 @@ import ProfilePic2 from "../assets/images/profile-pic3.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Skill from "@/components/Skill/components/Skill";
 import Experience from "@/components/Experience/components/Experience";
+import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 
 const AnimatedNumbers = ({ value }: any) => {
   const ref = useRef<any>(null);
@@ -36,6 +37,7 @@ function about() {
         <title>{dictionary.head.about.title}</title>
         <meta name="description" content={dictionary.head.about.meta} />
       </Head>
+      <TransitionEffect />
       <main className="flex items-center flex-col w-full justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
