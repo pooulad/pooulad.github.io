@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@types/node": "20.3.3",
-    "@types/react": "18.2.14",
-    "@types/react-dom": "18.2.6",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.8",
     "framer-motion": "^10.12.18",
@@ -21,6 +19,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.25",
     "tailwindcss": "^3.3.2"
