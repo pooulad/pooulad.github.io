@@ -61,9 +61,9 @@ function about() {
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
-            <div className="flex flex-col col-span-2 justify-between items-end xl:col-span-8 xl:flex-row xl:items-center md:order-3">
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block font-bold text-7xl">
+            <div className="flex flex-col col-span-2 justify-between items-end xl:col-span-8 xl:flex-row xl:items-center md:order-3 md:grid md:grid-cols-2">
+              <div className="flex flex-col items-end justify-center md:items-center">
+                <span className="inline-block font-bold text-7xl md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers
                     value={dictionary.about.summary.satisfiedClients.number}
                   />
@@ -73,8 +73,8 @@ function about() {
                   {dictionary.about.summary.satisfiedClients.text}
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block font-bold text-7xl">
+              <div className="flex flex-col items-end justify-center md:items-center">
+                <span className="inline-block font-bold text-7xl md:py-3 md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers
                     value={dictionary.about.summary.projectsCompleted.number}
                   />
@@ -84,8 +84,8 @@ function about() {
                   {dictionary.about.summary.projectsCompleted.text}
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block font-bold text-7xl">
+              <div className="flex flex-col items-end justify-center md:items-center">
+                <span className="inline-block font-bold text-7xl md:py-3 md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers
                     value={dictionary.about.summary.yearsOfExperience.number}
                   />
@@ -95,8 +95,8 @@ function about() {
                   {dictionary.about.summary.yearsOfExperience.text}
                 </h2>
               </div>
-              <div className="flex flex-col items-end justify-center">
-                <span className="inline-block font-bold text-7xl">
+              <div className="flex flex-col items-end justify-center md:items-center">
+                <span className="inline-block font-bold text-7xl md:py-3 md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumbers
                     value={dictionary.about.summary.workingHours.number}
                   />
