@@ -155,34 +155,6 @@ function projects() {
             </div>
             <div className="col-span-6">
               <SimpleProject
-                title={dictionary.projects.project2.title}
-                type={dictionary.projects.project2.type}
-                github={dictionary.projects.project2.github}
-                link={dictionary.projects.project2.link}
-                img={project2Img}
-              />
-            </div>
-            <div className="col-span-6">
-              <SimpleProject
-                title={dictionary.projects.project3.title}
-                type={dictionary.projects.project3.type}
-                github={dictionary.projects.project3.github}
-                link={dictionary.projects.project3.link}
-                img={project3Img}
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                title={dictionary.projects.project5.title}
-                type={dictionary.projects.project5.type}
-                summary={dictionary.projects.project5.summary}
-                github={dictionary.projects.project5.github}
-                link={dictionary.projects.project5.link}
-                img={project5Img}
-              />
-            </div>
-            <div className="col-span-6">
-              <SimpleProject
                 title={dictionary.projects.project4.title}
                 type={dictionary.projects.project4.type}
                 github={dictionary.projects.project4.github}
@@ -197,6 +169,34 @@ function projects() {
                 github={dictionary.projects.project6.github}
                 link={dictionary.projects.project6.link}
                 img={project6Img}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title={dictionary.projects.project5.title}
+                type={dictionary.projects.project5.type}
+                summary={dictionary.projects.project5.summary}
+                github={dictionary.projects.project5.github}
+                link={dictionary.projects.project5.link}
+                img={project5Img}
+              />
+            </div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project2.title}
+                type={dictionary.projects.project2.type}
+                github={dictionary.projects.project2.github}
+                link={dictionary.projects.project2.link}
+                img={project2Img}
+              />
+            </div>
+            <div className="col-span-6">
+              <SimpleProject
+                title={dictionary.projects.project3.title}
+                type={dictionary.projects.project3.type}
+                github={dictionary.projects.project3.github}
+                link={dictionary.projects.project3.link}
+                img={project3Img}
               />
             </div>
           </div>
