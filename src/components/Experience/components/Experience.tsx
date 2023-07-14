@@ -23,7 +23,7 @@ const Details = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] md:w-[80%] mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -31,7 +31,7 @@ const Details = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           {companyLink === "#" ? (
             <a className="text-primary dark:text-primaryDark capitalize">{company}</a>
@@ -45,10 +45,10 @@ const Details = ({
             </a>
           )}
         </h3>
-        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75 xs:text-sm">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full md:text-sm">{work}</p>
       </motion.div>
     </li>
   );
@@ -62,15 +62,15 @@ function Experience() {
   });
   return (
     <div className="my-64">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
         {dictionary.about.experience.title}
       </h2>
-      <div ref={ref} className="w-[75%] mx-auto relative">
+      <div ref={ref} className="w-[75%] mx-auto relative lg:w-[90%] md:w-full">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="absolute right-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light"
+          className="absolute right-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light md:w-[2px] md:right-[30px] xs:right-[20px]"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:mr-2">
           <Details
             position={dictionary.about.experience.ex1.position}
             company={dictionary.about.experience.ex1.company}
