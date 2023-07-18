@@ -13,7 +13,7 @@ import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 const AnimatedNumbers = ({ value }: any) => {
   const ref = useRef<any>(null);
   const motionValue = useMotionValue(0);
-  const springValue = useSpring(motionValue, { duration: 5000 });
+  const springValue = useSpring(motionValue, { duration: 10000 });
   const isInView = useInView(ref, { once: true });
   useEffect(() => {
     if (isInView) {
