@@ -68,7 +68,7 @@ export const dictionary = {
         text: "سالهای تجربه",
       },
       workingHours: {
-        number: "10000",
+        number: "9000",
         text: "ساعات کاری",
       },
     },
