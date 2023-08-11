@@ -2,7 +2,7 @@ import React, { memo, useEffect, useState } from "react";
 import { CustomLink, CustomLinkMobile } from "../Common";
 import { dictionary } from "@/dictionary";
 import {
-  AmirankalaIcon,
+  // AmirankalaIcon,
   EmailIcon,
   GithubIcon,
   InstagramIcon,
@@ -117,7 +117,7 @@ function Header() {
           >
             <EmailIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3"
@@ -125,7 +125,7 @@ function Header() {
             target={"_blank"}
           >
             <AmirankalaIcon />
-          </motion.a>
+          </motion.a> */}
         </nav>
       </div>
       {isOpen ? (
@@ -199,7 +199,7 @@ function Header() {
             >
               <EmailIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mx-3 rounded-full sm:mx-1"
@@ -207,7 +207,7 @@ function Header() {
               target={"_blank"}
             >
               <AmirankalaIcon />
-            </motion.a>
+            </motion.a> */}
           </nav>
         </motion.div>
       ) : null}
