@@ -158,6 +158,14 @@ export const dictionary = {
         address: "تهران، تهران",
         time: "1401-1402",
       },
+      ex9: {
+        position: "توسعه دهنده",
+        company: "اهرم",
+        companyLink: "https://ahrom.biz/",
+        work: "طراحی وبسایت فروشگاهی اهرم برای فروشندگان.",
+        address: "تهران، تهران",
+        time: "1401-1402",
+      },
     },
   },
   projects: {

@@ -34,7 +34,9 @@ const Details = ({
         <h3 className="capitalize font-bold text-2xl sm:text-xl xs:text-lg">
           {position}&nbsp;
           {companyLink === "#" ? (
-            <a className="text-primary dark:text-primaryDark capitalize">{company}</a>
+            <a className="text-primary dark:text-primaryDark capitalize">
+              {company}
+            </a>
           ) : (
             <a
               className="text-primary dark:text-primaryDark capitalize"
@@ -134,6 +136,14 @@ function Experience() {
             work={dictionary.about.experience.ex8.work}
             address={dictionary.about.experience.ex8.address}
             time={dictionary.about.experience.ex8.time}
+          />
+          <Details
+            position={dictionary.about.experience.ex9.position}
+            company={dictionary.about.experience.ex9.company}
+            companyLink={dictionary.about.experience.ex9.companyLink}
+            work={dictionary.about.experience.ex9.work}
+            address={dictionary.about.experience.ex9.address}
+            time={dictionary.about.experience.ex9.time}
           />
         </ul>
       </div>
