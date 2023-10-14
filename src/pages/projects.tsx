@@ -12,6 +12,9 @@ import project3Img from "../assets/images/project3.png";
 import project4Img from "../assets/images/project4.jpg";
 import project5Img from "../assets/images/project5.png";
 import project6Img from "../assets/images/project6.png";
+import project7Img from "../assets/images/project7.png";
+import project8Img from "../assets/images/project8.png";
+import project9Img from "../assets/images/project9.png";
 import TransitionEffect from "@/components/TransitionEffect/TransitionEffect";
 
 type FeaturedProjectProps = {
@@ -154,6 +157,34 @@ function projects() {
             className="mb-16 lg:!text-7xl sm:!mb-8 sm:!text-6xl xs:!text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-24 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="col-span-12">
+              <FeaturedProject
+                title={dictionary.projects.project8.title}
+                type={dictionary.projects.project8.type}
+                summary={dictionary.projects.project8.summary}
+                github={dictionary.projects.project8.github}
+                link={dictionary.projects.project8.link}
+                img={project8Img}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <SimpleProject
+                title={dictionary.projects.project7.title}
+                type={dictionary.projects.project7.type}
+                github={dictionary.projects.project7.github}
+                link={dictionary.projects.project7.link}
+                img={project7Img}
+              />
+            </div>
+            <div className="col-span-6 sm:col-span-12">
+              <SimpleProject
+                title={dictionary.projects.project9.title}
+                type={dictionary.projects.project9.type}
+                github={dictionary.projects.project9.github}
+                link={dictionary.projects.project9.link}
+                img={project9Img}
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 title={dictionary.projects.project1.title}

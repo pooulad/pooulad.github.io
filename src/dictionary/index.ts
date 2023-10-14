@@ -176,7 +176,7 @@ export const dictionary = {
       link: "https://github.com/pooulad/ts-note-project",
       github: "https://github.com/pooulad/ts-note-project",
       summary:
-        "یک پروژه ساده نوشته شده با ReactJS و TypeScript برای درک بهتر کارکردن و اتصال TS به برنامه های React. در این پروژه به نحوه استفاده از تایپ ها در هنگام ساخت، بروزرسانی و یا حذف آیتم های برنامه میپردازیم.",
+        "🚨A small project has been written about working with typescript",
       type: "ویژه",
     },
     project2: {
@@ -217,6 +217,27 @@ export const dictionary = {
       github: "https://github.com/pooulad/go-webserver",
       summary:
         "یک پروژه ساده نوشته شده با GO برای ایجاد روت های مختلف برنامه و نمایش سرور",
+      type: "ویژه",
+    },
+    project7: {
+      title: "sampleCamelianajafi.ir",
+      link: "https://github.com/pooulad/sampleCamelianajafi.ir",
+      github: "https://github.com/pooulad/sampleCamelianajafi.ir",
+      summary: "🚨sampleCamelianajafi.ir",
+      type: "ویژه",
+    },
+    project8: {
+      title: "liateam_smaple_project",
+      link: "https://github.com/pooulad/liateam_smaple_project",
+      github: "https://github.com/pooulad/liateam_smaple_project",
+      summary: "🚨liateam_smaple_project",
+      type: "ویژه",
+    },
+    project9: {
+      title: "ReactTsShoppingCart",
+      link: "https://github.com/pooulad/ReactTsShoppingCart",
+      github: "https://github.com/pooulad/ReactTsShoppingCart",
+      summary: "🚨simple project with react and typescript",
       type: "ویژه",
     },
   },
