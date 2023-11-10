@@ -1,11 +1,11 @@
-import React, { memo, useEffect, useState } from "react";
+import React, { memo, useState } from "react";
 import { CustomLink, CustomLinkMobile } from "../Common";
 import { dictionary } from "@/dictionary";
 import {
   // AmirankalaIcon,
+  // InstagramIcon,
   EmailIcon,
   GithubIcon,
-  InstagramIcon,
   MoonToSubIcon,
   SunToMoonIcon,
   TelegramIcon,
@@ -99,7 +99,7 @@ function Header() {
           >
             <TelegramIcon />
           </motion.a>
-          <motion.a
+          {/* <motion.a
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
             className="w-6 mx-3"
@@ -107,7 +107,7 @@ function Header() {
             target={"_blank"}
           >
             <InstagramIcon />
-          </motion.a>
+          </motion.a> */}
           <motion.a
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -181,7 +181,7 @@ function Header() {
             >
               <TelegramIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
               className="w-6 mx-3 rounded-full sm:mx-1"
@@ -189,7 +189,7 @@ function Header() {
               target={"_blank"}
             >
               <InstagramIcon />
-            </motion.a>
+            </motion.a> */}
             <motion.a
               whileHover={{ y: -2 }}
               whileTap={{ scale: 0.9 }}
