@@ -29,7 +29,7 @@ export const dictionary = {
   },
   head: {
     home: {
-      title: "امیرمهدی پولادی - خانه",
+      title: "امیرمهدی پولادی - صفحه اصلی",
       meta: "وبسایت رزومه امیرمهدی پولادی",
     },
     about: {
